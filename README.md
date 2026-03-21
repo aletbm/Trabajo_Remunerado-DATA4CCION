@@ -2,8 +2,6 @@
 
 Dashboard interactivo para ONU Mujeres que mapea barreras al trabajo remunerado femenino en América Latina, combinando brecha digital y carga de cuidados en un índice de riesgo por país. Integra datos de CEPAL, ILOSTAT, ITU y Banco Mundial para identificar zonas críticas de intervención alineadas con ODS 4, 5 y 8.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1adfLUKryWvWeJg7I01my_3oXpnRIoo4u?usp=sharing)
-
 ---
 
 ## Enlaces del proyecto
