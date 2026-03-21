@@ -4,7 +4,7 @@ Dashboard interactivo para ONU Mujeres que mapea barreras al trabajo remunerado 
 
 ---
 
-## Explorar el proyecto
+## Enlaces del proyecto
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1adfLUKryWvWeJg7I01my_3oXpnRIoo4u?usp=sharing)
 
