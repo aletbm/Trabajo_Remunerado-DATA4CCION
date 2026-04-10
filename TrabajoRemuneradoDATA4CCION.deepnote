@@ -2,7 +2,7 @@ environment: {}
 execution: {}
 metadata:
   createdAt: 2026-04-08T15:21:28.994Z
-  modifiedAt: 2026-04-10T22:52:54.411Z
+  modifiedAt: 2026-04-10T23:54:39.360Z
 project:
   id: 5650cdca09a840d195b05e505a8cdfd0
   integrations:
@@ -11,1971 +11,6 @@ project:
       type: github_package
   name: Trabajo_Remunerado_DATA4CCION
   notebooks:
-    - blocks:
-        - id: bc35880d9eb042fbb358bad3741b2ccf
-          blockGroup: ef13f09170064348b9295c1886681aba
-          sortingKey: "000000"
-          type: text-cell-h2
-          content: Fuentes de Datos
-          metadata:
-            formattedRanges: []
-        - id: fca11f23dd4643e1b625dec6d42b65f2
-          blockGroup: 472612c0c54d46f7a98931deab1e386a
-          sortingKey: "000001"
-          type: text-cell-p
-          content: "La arquitectura de datos de este estudio se fundamenta en la integración y armonización de tres repositorios
-            internacionales clave:
-
-
-            - Brecha digital: \"Percentage of individuals using the Internet - at least once a day\" | Worldbank.
-
-            Link:
-            https://data360.worldbank.org/en/indicator/ITU_DH_INT_USR_DAY?sex=F&age=Y_GE75%2CY15T24%2CY0T14%2CY25T74&ur\
-            banisation=_T&recentYear=false&view=datatable
-
-            \r
-
-            - Carga de cuidados: \"Tiempo total de trabajo\" | Observatorio de Igualdad de Género de América Latina y el
-            Caribe (CEPAL).
-
-            Link: https://oig.cepal.org/es/indicadores?id=2286\ 
-
-            \r
-
-            \ - Edad: \"Estructura de la población por sexo y por grupos de edad (Porcentaje)\" | CEPALSTAT.
-
-            Link: https://statistics.cepal.org/portal/cepalstat/dashboard.html?theme=1&lang=es"
-          metadata:
-            formattedRanges:
-              - url: https://statistics.cepal.org/portal/cepalstat/dashboard.html?theme=1&lang=es
-                type: link
-                ranges: []
-                toCodePoint: 747
-                fromCodePoint: 671
-        - id: de1be828fdb3489d8d7939f813970072
-          blockGroup: 10d9711f0f60478987c247d8c70d6328
-          sortingKey: "000002"
-          type: text-cell-h2
-          content: "Dónde se concentran las barreras al trabajo remunerado femenino: brecha digital y carga de cuidados en América
-            Latina para identificar contextos prioritarios de intervención"
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  italic: true
-                toCodePoint: 173
-                fromCodePoint: 0
-        - id: 619d2e4c0ba3416e9705ca15917b6907
-          blockGroup: 92ae51d505fd4a068eee6364db884508
-          sortingKey: "000003"
-          type: text-cell-p
-          content: >-
-            Este proyecto investiga la intersección entre la brecha digital y la carga de cuidados como barreras
-            estructurales fundamentales para el acceso de las mujeres al mercado laboral remunerado en la región de
-            América Latina.
-
-
-            1. Alcance geográfico y temporal
-
-            La selección de la muestra comprende nueve países de América Latina, priorizados bajo el criterio de
-            densidad y consistencia de datos en los tres repositorios integrados en este proyecto::
-
-            - Cono Sur: Argentina, Uruguay, Chile.
-
-            - Región Andina: Colombia, Perú.
-
-            - Centroamérica y Caribe: Costa Rica, Guatemala, El Salvador, República Dominicana.
-
-
-            El análisis se encuadra en el período 2021-2025. Se estableció esta ventana temporal breve para garantizar
-            la actualidad de los hallazgos y permitir la generalización de conclusiones entre los años incluidos,
-            asumiendo que las variaciones estructurales en este intervalo son mínimas y permiten una comparación válida.
-
-
-            2. Definición de Variables
-
-            La arquitectura del análisis se organiza bajo la siguiente jerarquía:
-
-            - Variables Primarias (Barreras): Carga de cuidados y Brecha digital.
-
-            - Variable Secundaria (Filtro): Edad.
-
-
-            3. Propuesta de Solución basada en datos
-
-            La propuesta consiste en un mapa interactivo diseñado para un análisis dinámico y detallado. Esta
-            herramienta permite identificar geográficamente los nudos críticos donde las variables de brecha digital y
-            carga de cuidados se intensifican, facilitando la detección de contextos prioritarios de intervención.
-
-
-            4. Fases del Proyecto
-
-            1. ETL: Extracción, transformación y carga de los datos provenientes de los tres repositorios.
-
-            2. Análisis Exploratorio de Datos (EDA): Diagnóstico de patrones y concentraciones de barreras.
-
-            3. Construcción del Mapa Interactivo: Implementación de la capa de visualización geoespacial.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 63
-                fromCodePoint: 49
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 86
-                fromCodePoint: 69
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 254
-                fromCodePoint: 222
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 648
-                fromCodePoint: 639
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 946
-                fromCodePoint: 920
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 1166
-                fromCodePoint: 1126
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 1211
-                fromCodePoint: 1195
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 1497
-                fromCodePoint: 1476
-        - id: 653787cb28b14be08821c7b0c0b90d30
-          blockGroup: dbe74fc58b1b4eb89a88240b6162044d
-          sortingKey: "000004"
-          type: text-cell-p
-          content: En esta etapa, se realiza una exploración de los tres datasets para evaluar la calidad de los mismos, tipos de
-            datos, columnas existentes, valores faltantes y posibles duplicados. A partir de esto, se aplicará un
-            proceso de limpieza y transformación con el fin de unificar toda la información en un único dataset para las
-            etapas posteriores de análisis exploratorio de datos (EDA) y georreferenciación en el mapa interactivo.
-          metadata:
-            formattedRanges: []
-        - id: c8d2e865028540ea96dd7c680f4d6c03
-          blockGroup: bf7cf0ab577a40908ba1c57772f343f1
-          sortingKey: "000005"
-          type: text-cell-h2
-          content: '1.1. Dataset 1: "Percentage of individuals using the Internet - at least once a day"'
-          metadata:
-            formattedRanges: []
-        - id: c638a24d46bb485cb31c46b02e09a991
-          blockGroup: abdb135782924c8da4256c1b2db1f134
-          sortingKey: "000006"
-          type: text-cell-h2
-          content: 1.1.1 Extracción y exploración del dataset
-          metadata:
-            formattedRanges: []
-        - id: 72943bf4b7544ea6954f8049f5529fd6
-          blockGroup: b4b2bc23380c4f19ab61d5f0b52dd256
-          sortingKey: "000007"
-          contentHash: 5499c082
-          executionCount: 1
-          executionFinishedAt: 2026-04-10T22:07:03.956Z
-          executionStartedAt: 2026-04-10T22:07:03.793Z
-          type: code
-          content: >-
-            import pandas as pd
-
-
-            # Cargar el dataset
-
-            internet = pd.read_csv('/work/Uso del Internet.csv')
-
-
-            # Mostrar todas las columnas
-
-            internet_columns = internet.columns.tolist()
-
-            internet_columns
-          metadata:
-            execution_start: 1775858823793
-            execution_millis: 163
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            sql_integration_id: ""
-            deepnote_variable_name: ""
-        - id: 89bfab1960a7411197b18c51dc3c75ff
-          blockGroup: 1405d95ddd6e4b039896e2130df06302
-          sortingKey: "000008"
-          contentHash: 65267c68
-          executionCount: 2
-          executionFinishedAt: 2026-04-10T22:07:04.003Z
-          executionStartedAt: 2026-04-10T22:07:04.003Z
-          type: code
-          content: >-
-            # Número total de filas y columnas del dataset
-
-            internet.shape
-          metadata:
-            execution_start: 1775858824003
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 971031fdf83c4cf594b32c991778ad78
-          blockGroup: fa84e564776841b0bc47757c69378bf1
-          sortingKey: "000009"
-          contentHash: "96969643"
-          executionCount: 3
-          executionFinishedAt: 2026-04-10T22:07:04.063Z
-          executionStartedAt: 2026-04-10T22:07:04.062Z
-          type: code
-          content: >-
-            # Comprobación de los tipos de datos
-
-            internet.dtypes
-          metadata:
-            execution_start: 1775858824062
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 1d1cad01b3414db4996b24fe87cf201d
-          blockGroup: bcc84910615b45a3ae1ba364b5408040
-          sortingKey: "000010"
-          contentHash: e40280fa
-          executionCount: 4
-          executionFinishedAt: 2026-04-10T22:07:04.133Z
-          executionStartedAt: 2026-04-10T22:07:04.132Z
-          type: code
-          content: >-
-            # Verificación de valores nulos por columna
-
-            internet.isnull().sum()
-          metadata:
-            execution_start: 1775858824132
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 2b1dff2c1e304636b7842085fbfe0a30
-          blockGroup: 1c093d10b32f42afbdbb89c03e9a6adb
-          sortingKey: "000011"
-          type: text-cell-h2
-          content: 1.1.2. Transformación
-          metadata:
-            formattedRanges: []
-        - id: 03af5660e71046f9aa4906527fdc3f9b
-          blockGroup: 646c778868c74df5b0784f7cb203151b
-          sortingKey: "000012"
-          type: text-cell-h1
-          content: 1. ETL | Extracción, transformación y carga de datos
-          metadata:
-            formattedRanges: []
-        - id: 39e093169316448c85ae5ce511d227b8
-          blockGroup: 983a685d36c24ace9263a641131f6d0a
-          sortingKey: "000013"
-          contentHash: 3892ef74
-          executionCount: 5
-          executionFinishedAt: 2026-04-10T22:07:04.183Z
-          executionStartedAt: 2026-04-10T22:07:04.183Z
-          type: code
-          content: >
-            df = internet.copy()
-
-
-            # Limpiar columnas
-
-            for c in ['SEX_LABEL', 'AGE_LABEL', 'REF_AREA_LABEL', 'INDICATOR_LABEL']:
-                if c in df.columns:
-                    df[c] = df[c].astype(str).str.strip()
-
-            # Convertir año
-
-            df['TIME_PERIOD'] = pd.to_numeric(df['TIME_PERIOD'], errors='coerce').astype('Int64')
-
-
-            # Eliminar nulos clave
-
-            df = df.dropna(subset=['SEX_LABEL', 'REF_AREA_LABEL', 'TIME_PERIOD'])
-
-
-            # Países correctos
-
-            paises_objetivo = [
-                'Argentina', 'Colombia', 'Dominican Republic', 'Costa Rica',
-                'Guatemala', 'Uruguay', 'Chile', 'El Salvador', 'Peru'
-            ]
-
-
-            # Filtros
-
-            mask_mujeres = df['SEX_LABEL'] == 'Female'
-
-            mask_anios = df['TIME_PERIOD'].between(2020, 2025)
-
-            mask_paises = df['REF_AREA_LABEL'].isin(paises_objetivo)
-
-            # Aplicar filtros principales
-
-            filtrado = df[mask_mujeres & mask_anios & mask_paises]
-
-
-            # QUEDARSE SOLO con el total (sin desglose por edad)
-
-            filtrado = filtrado[
-                filtrado['AGE_LABEL'] == 'All age ranges or no breakdown by age'
-            ]
-
-
-            # Seleccionar columnas incluyendo OBS_VALUE
-
-            columnas = ['REF_AREA_LABEL', 'TIME_PERIOD', 'AGE_LABEL', 'OBS_VALUE']
-
-            columnas = [col for col in columnas if col in filtrado.columns]
-
-
-            resultado = filtrado[columnas].sort_values(
-                ['REF_AREA_LABEL', 'TIME_PERIOD']
-            )
-
-
-            print("Filas filtradas:", len(resultado))
-
-            display(resultado)
-          metadata:
-            execution_start: 1775858824183
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            deepnote_table_state:
-              sortBy: []
-              filters: []
-              pageSize: 100
-              pageIndex: 0
-              columnOrder:
-                - REF_AREA_LABEL
-                - TIME_PERIOD
-                - AGE_LABEL
-                - OBS_VALUE
-              hiddenColumnIds: []
-              columnDisplayNames: []
-              conditionalFilters: []
-              cellFormattingRules: []
-              wrappedTextColumnIds: []
-            deepnote_table_invalid: false
-            deepnote_table_loading: false
-        - id: 9c43ba0793ff45ed9b16de734af157fe
-          blockGroup: 65a6a9bf1363405c931b0058ec1bf7f6
-          sortingKey: "000014"
-          contentHash: f49a64b7
-          executionCount: 6
-          executionFinishedAt: 2026-04-10T22:07:04.243Z
-          executionStartedAt: 2026-04-10T22:07:04.243Z
-          type: code
-          content: print(sorted(resultado['REF_AREA_LABEL'].unique()))
-          metadata:
-            execution_start: 1775858824243
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 64262920f29b4480826a80a96375616a
-          blockGroup: 949ee2633c4d40c4b576c38db3e42b3a
-          sortingKey: "000015"
-          contentHash: 4bffe150
-          executionCount: 7
-          executionFinishedAt: 2026-04-10T22:07:04.294Z
-          executionStartedAt: 2026-04-10T22:07:04.293Z
-          type: code
-          content: >-
-            # Obtener el último año por país (tabla pequeña)
-
-            ultimos_anios = resultado.groupby('REF_AREA_LABEL', as_index=False)['TIME_PERIOD'].max()
-
-
-            # Unir con los datos originales
-
-            resultado_final = resultado.merge(
-                ultimos_anios,
-                on=['REF_AREA_LABEL', 'TIME_PERIOD'],
-                how='inner'
-            )
-
-
-            # Ordenar
-
-            resultado_final = resultado_final.sort_values(
-                ['REF_AREA_LABEL', 'AGE_LABEL']
-            )
-
-
-            display(resultado_final)
-          metadata:
-            execution_start: 1775858824293
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            deepnote_table_state:
-              sortBy: []
-              filters: []
-              pageSize: 50
-              pageIndex: 0
-              columnOrder:
-                - REF_AREA_LABEL
-                - TIME_PERIOD
-                - AGE_LABEL
-                - OBS_VALUE
-              hiddenColumnIds: []
-              columnDisplayNames: []
-              conditionalFilters: []
-              cellFormattingRules: []
-              wrappedTextColumnIds: []
-            deepnote_table_invalid: false
-            deepnote_table_loading: false
-        - id: 243491b8a96f420fb0f62be2b376ec83
-          blockGroup: 1eda10d20b924c1cb1253dbf06464e76
-          sortingKey: "000016"
-          contentHash: e39974d2
-          executionCount: 8
-          executionFinishedAt: 2026-04-10T22:07:04.353Z
-          executionStartedAt: 2026-04-10T22:07:04.353Z
-          type: code
-          content: >-
-            # Normalización de nombres de columnas para mejorar la legibilidad
-
-            resultado_final = resultado_final.rename(
-                columns=
-                {'REF_AREA_LABEL': 'pais',
-                'TIME_PERIOD': 'anio',
-                'AGE_LABEL': 'edad',
-                'OBS_VALUE': 'porcentaje_uso_internet'}
-            )
-
-
-            # Mostrar el resultado
-
-            resultado_final.head(10)
-          metadata:
-            execution_start: 1775858824353
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: a9f7adb602144ff48020890f664e8bf8
-          blockGroup: ff91124ac2264b7a884ee017e7e1cec9
-          sortingKey: "000017"
-          contentHash: 6df1eba9
-          executionCount: 9
-          executionFinishedAt: 2026-04-10T22:07:04.413Z
-          executionStartedAt: 2026-04-10T22:07:04.367Z
-          type: code
-          content: >-
-            # Definimos diccionario de reemplazos al español
-
-            dicc_paises= {
-                'Argentina': 'Argentina',
-                'Chile': 'Chile',
-                'Colombia': 'Colombia',
-                'Costa Rica': 'Costa Rica',
-                'Dominican Republic': 'Republica Dominicana', 
-                'El Salvador': 'El Salvador',
-                'Guatemala': 'Guatemala',
-                'Peru': 'Peru',
-                'Uruguay': 'Uruguay'
-                }
-
-            # Aplicamos el reemplazo en la columna 'pais'
-
-            resultado_final['pais'] = resultado_final['pais'].replace(dicc_paises)
-
-
-            # Verificación de resultados
-
-            print("Países procesados:")
-
-            print(resultado_final['pais'].unique())
-
-
-            resultado_final.head(10)
-          metadata:
-            execution_start: 1775858824367
-            execution_millis: 46
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 63d9c6f3a37c431db487b59cc0a4b652
-          blockGroup: c808c9aacc0d44dca3178acf47b74109
-          sortingKey: "000018"
-          contentHash: 58b9c922
-          executionCount: 10
-          executionFinishedAt: 2026-04-10T22:07:04.463Z
-          executionStartedAt: 2026-04-10T22:07:04.462Z
-          type: code
-          content: >-
-            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
-
-            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
-
-            resultado_final['pais'] = (
-                resultado_final['pais']
-                .str.strip()
-                .str.upper()
-                .str.normalize('NFKD')
-                .str.encode('ascii', errors='ignore')
-                .str.decode('utf-8')
-            )
-
-
-            # Mostrar resultados
-
-            resultado_final['pais'].unique()
-          metadata:
-            execution_start: 1775858824462
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 604dbb3a170e4974a489b401c6112b92
-          blockGroup: 81d46677e7714d7199a0e62288b58442
-          sortingKey: "000019"
-          contentHash: 5e172c38
-          executionCount: 12
-          executionFinishedAt: 2026-04-10T22:07:04.573Z
-          executionStartedAt: 2026-04-10T22:07:04.573Z
-          type: code
-          content: >-
-            # Inspección del dataset intermedio
-
-            resultado_final.head(10)
-          metadata:
-            execution_start: 1775858824573
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: b858f320621e402da3bbd21f710a11ac
-          blockGroup: e948c3b6d2be468ba6d56832be16cbb3
-          sortingKey: "000020"
-          type: text-cell-p
-          content: ""
-          metadata:
-            formattedRanges: []
-        - id: 14f239f4df1d40c295960721b15aec72
-          blockGroup: df67e7cba2044cf687aa1de1168012ae
-          sortingKey: "000021"
-          contentHash: e83b824c
-          executionCount: 11
-          executionFinishedAt: 2026-04-10T22:07:04.523Z
-          executionStartedAt: 2026-04-10T22:07:04.523Z
-          type: code
-          content: >-
-            # Revisión de tipos de datos de dataframe final
-
-            resultado_final.dtypes
-          metadata:
-            execution_start: 1775858824523
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 4096e758ab2e40bbb6087510ebce5c78
-          blockGroup: e57f946d61864f2dae3d69aa103c8644
-          sortingKey: "000022"
-          type: text-cell-h2
-          content: '1.2. Dataset 2: "Tiempo total de trabajo"'
-          metadata:
-            formattedRanges: []
-        - id: 6a6d2f50e14b4ea1ac235bba74183c90
-          blockGroup: 53bebc801c5e4bb7a4611208080ed878
-          sortingKey: "000023"
-          contentHash: 203a64ac
-          executionCount: 13
-          executionFinishedAt: 2026-04-10T22:07:04.827Z
-          executionStartedAt: 2026-04-10T22:07:04.713Z
-          type: code
-          content: >-
-            # Cargar el dataset
-
-            tiempo_trabajo = pd.read_csv('/work/Tiempo total de trabajo.csv', encoding='latin-1')
-
-
-            # Mostrar todas las columnas
-
-            columnas = tiempo_trabajo.columns.tolist()
-
-            print(columnas)
-          metadata:
-            execution_start: 1775858824713
-            execution_millis: 114
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: aee15b71576b4f8481f5a8decd0faf82
-          blockGroup: 031cfcefcf3d496a87a9e4db69c95a7a
-          sortingKey: "000024"
-          contentHash: e38c62f6
-          executionCount: 14
-          executionFinishedAt: 2026-04-10T22:07:04.883Z
-          executionStartedAt: 2026-04-10T22:07:04.883Z
-          type: code
-          content: >-
-            # Número total de filas y columnas del dataset
-
-            tiempo_trabajo.shape
-          metadata:
-            execution_start: 1775858824883
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 28dfab7a82ae4786a9fda00d66834055
-          blockGroup: f0a9e35548a245c1b2b20d177c16b2cd
-          sortingKey: "000025"
-          type: text-cell-h2
-          content: 1.2.1 Extracción y exploración del dataset
-          metadata:
-            formattedRanges: []
-        - id: 7c63f172770f4a2c8f1a52cb235cc163
-          blockGroup: cbf1aa37c2fb4c898b6ae2b71144e14e
-          sortingKey: "000026"
-          contentHash: da118f1e
-          executionCount: 15
-          executionFinishedAt: 2026-04-10T22:07:04.943Z
-          executionStartedAt: 2026-04-10T22:07:04.943Z
-          type: code
-          content: >-
-            # Comprobación de los tipos de datos
-
-            tiempo_trabajo.dtypes
-          metadata:
-            execution_start: 1775858824943
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 6939c0e151a24bc5af674f7463d050c9
-          blockGroup: 0e6fbc9c571941c3a0ab48ea9a432ac2
-          sortingKey: "000027"
-          type: text-cell-h2
-          content: 1.2.2 Transformación
-          metadata:
-            formattedRanges: []
-        - id: 9bfa5e44d1444350926fa73effe923ca
-          blockGroup: bdae464ab2ee4d3c84fabd97a3e1fd78
-          sortingKey: "000028"
-          contentHash: 51f1396b
-          executionCount: 16
-          executionFinishedAt: 2026-04-10T22:07:05.003Z
-          executionStartedAt: 2026-04-10T22:07:05.003Z
-          type: code
-          content: >-
-            # Se crea una copia sobre la cual realizar las transformaciones
-
-            tiempo_trabajo_copia = tiempo_trabajo.copy()
-          metadata:
-            execution_start: 1775858825003
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: a14afb05f9d8463d87642027c73db32a
-          blockGroup: 1bbc9cf397de4a47bbe241b1779f163e
-          sortingKey: "000029"
-          contentHash: 465fab24
-          executionCount: 18
-          executionFinishedAt: 2026-04-10T22:07:05.113Z
-          executionStartedAt: 2026-04-10T22:07:05.113Z
-          type: code
-          content: >-
-            # Verificación de valores nulos por columna
-
-            tiempo_trabajo.isnull().sum()
-          metadata:
-            execution_start: 1775858825113
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: e876f4f583e648a3bd0adf8f62717c43
-          blockGroup: 729685590f6e4afaa68ba872c3d7dda8
-          sortingKey: "000030"
-          contentHash: 3120eb55
-          executionCount: 19
-          executionFinishedAt: 2026-04-10T22:07:05.163Z
-          executionStartedAt: 2026-04-10T22:07:05.163Z
-          type: code
-          content: >-
-            # Normalización de nombres de columnas para mejorar la legibilidad
-
-            tiempo_trabajo_copia = tiempo_trabajo_copia.rename(
-                columns=
-                {'indicator': 'indicador',
-                'Años__ESTANDAR': 'anios',
-                'País__ESTANDAR': 'pais',
-                'Tipos de trabajo': 'tipo_trabajo',
-                'value': 'promedio_horas_semanales'
-                }
-            )
-
-
-            # Mostrar el resultado
-
-            tiempo_trabajo_copia.head(5)
-          metadata:
-            execution_start: 1775858825163
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 129f647ff93b4e8cb50042e60bd31636
-          blockGroup: 060e44ce7d0e4cb7bc09ba7dc8ce77be
-          sortingKey: "000031"
-          contentHash: e25fb5ef
-          executionCount: 17
-          executionFinishedAt: 2026-04-10T22:07:05.063Z
-          executionStartedAt: 2026-04-10T22:07:05.063Z
-          type: code
-          content: >-
-            # Eliminación de columnas no significativas para el análisis
-
-            tiempo_trabajo_copia = tiempo_trabajo_copia.drop(
-                columns=['Sexo__población', 'unit', 'notes_ids', 'source_id'],
-                errors ='ignore'
-            )
-
-
-            # Mostrar el resultado
-
-            tiempo_trabajo_copia.head(5)
-          metadata:
-            execution_start: 1775858825063
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 0835d36a54a64ee0be6ce8960a871fb5
-          blockGroup: f955dea9162d4c3dbea83d3186821bd7
-          sortingKey: "000032"
-          contentHash: ca015336
-          executionCount: 20
-          executionFinishedAt: 2026-04-10T22:07:05.223Z
-          executionStartedAt: 2026-04-10T22:07:05.223Z
-          type: code
-          content: >-
-            # Convertimos la columna 'valor' a string, cambiamos coma por punto y convertimos a float
-
-            tiempo_trabajo_copia['promedio_horas_semanales'] = pd.to_numeric(
-                tiempo_trabajo_copia['promedio_horas_semanales'].astype(str).str.replace(',', '.'), 
-                errors='coerce'
-            )
-
-
-            # Mostrar resultados
-
-            display(tiempo_trabajo_copia[['promedio_horas_semanales']].head())
-
-            print(f"Nuevo tipo de dato: {tiempo_trabajo_copia['promedio_horas_semanales'].dtype}")
-          metadata:
-            execution_start: 1775858825223
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: cbc649c5dc1d4dd0a7e49c392773e965
-          blockGroup: deb45aecdfb94dfeb409ab99cead797d
-          sortingKey: "000033"
-          contentHash: d508abc9
-          executionCount: 21
-          executionFinishedAt: 2026-04-10T22:07:05.273Z
-          executionStartedAt: 2026-04-10T22:07:05.273Z
-          type: code
-          content: >-
-            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
-
-            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
-
-            tiempo_trabajo_copia['pais'] = (
-                tiempo_trabajo_copia['pais']
-                .str.strip()
-                .str.upper()
-                .str.normalize('NFKD')
-                .str.encode('ascii', errors='ignore')
-                .str.decode('utf-8')
-            )
-
-
-            # Mostrar resultados
-
-            tiempo_trabajo_copia['pais'].unique()
-          metadata:
-            execution_start: 1775858825273
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 5dcf5ca4783347e59c1df9f9afbc5f2b
-          blockGroup: 1b9cd943d2804ce5a5144b498983d532
-          sortingKey: "000034"
-          contentHash: fc236707
-          executionCount: 22
-          executionFinishedAt: 2026-04-10T22:07:05.323Z
-          executionStartedAt: 2026-04-10T22:07:05.322Z
-          type: code
-          content: >-
-            # Cantidad de tipos de trabajo por país
-
-            tiempo_trabajo_copia.groupby("pais")["tipo_trabajo"].nunique()
-          metadata:
-            execution_start: 1775858825322
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 4b43d190461c46e19e2397da4307730e
-          blockGroup: c4122776602a4f269565dc7c06185535
-          sortingKey: "000035"
-          contentHash: ea9a64ec
-          executionCount: 24
-          executionFinishedAt: 2026-04-10T22:07:05.453Z
-          executionStartedAt: 2026-04-10T22:07:05.453Z
-          type: code
-          content: >-
-            # Transformación a formato ancho: cada tipo de trabajo pasa a ser una columna
-
-            # para obtener una única fila por país
-
-
-            df_tiempo_trabajo = tiempo_trabajo_copia.pivot(
-                index='pais',
-                columns='tipo_trabajo',
-                values='promedio_horas_semanales'
-            ).reset_index()
-
-
-            # Eliminación del nombre del eje de columnas para mayor claridad
-
-            df_tiempo_trabajo.columns.name = None
-
-
-            # Recuperación de columnas constantes por país (indicador y anios)
-
-            df_extra = tiempo_trabajo_copia[['pais', 'indicador', 'anios']].drop_duplicates()
-
-
-            df_tiempo_trabajo = df_tiempo_trabajo.merge(df_extra, on='pais', how='left')
-
-
-            # Limpieza de nombres de columnas
-
-            df_tiempo_trabajo = df_tiempo_trabajo.rename(
-                columns=
-                {'Tiempo total de trabajo': 'tiempo_total_trabajo',
-                'Tiempo trabajo remunerado': 'tiempo_trabajo_remunerado',
-                'Tiempo trabajo no remunerado': 'tiempo_trabajo_no_remunerado'
-                }
-            )
-
-
-            # Aplicamos orden de columnas correcto
-
-            df_tiempo_trabajo = df_tiempo_trabajo[
-                ['indicador', 'anios', 'pais', 'tiempo_total_trabajo', 'tiempo_trabajo_remunerado', 'tiempo_trabajo_no_remunerado']
-            ]
-
-
-            # Verificación del resultado
-
-            df_tiempo_trabajo
-          metadata:
-            execution_start: 1775858825453
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: cd4a4d28f4944f958cdaf5c3160569f4
-          blockGroup: a9b1c59b5bd74b0ea481454a3942bfc8
-          sortingKey: "000036"
-          type: text-cell-h2
-          content: '1.3. Dataset 3: "Estructura de la población por sexo y por grupos de edad (Porcentaje)"'
-          metadata:
-            formattedRanges: []
-        - id: 3eec4836afb64fec9574030ad2d99d64
-          blockGroup: eefab9859d9d4924927baf30aa46cfd0
-          sortingKey: "000037"
-          contentHash: c94dfd8d
-          executionCount: 23
-          executionFinishedAt: 2026-04-10T22:07:05.393Z
-          executionStartedAt: 2026-04-10T22:07:05.393Z
-          type: code
-          content: >-
-            # Inspección del dataset intermedio
-
-            tiempo_trabajo_copia.head(10)
-          metadata:
-            execution_start: 1775858825393
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            deepnote_table_state:
-              sortBy: []
-              filters: []
-              pageSize: 10
-              pageIndex: 1
-              columnOrder:
-                - indicador
-                - anios
-                - pais
-                - tipo_trabajo
-                - promedio_horas_semanales
-              hiddenColumnIds: []
-              columnDisplayNames: []
-              conditionalFilters: []
-              cellFormattingRules: []
-              wrappedTextColumnIds: []
-            deepnote_table_loading: false
-        - id: 68ea228f1c6940c3be39442afebfccc7
-          blockGroup: ede4ad36c4cd496dae1bad583aebc03c
-          sortingKey: "000038"
-          type: text-cell-h2
-          content: 1.3.1 Extracción y exploración del dataset
-          metadata:
-            formattedRanges: []
-        - id: 33fcd022de024df1b0ae3ee3cb2477cf
-          blockGroup: 41bbb52dade741568deef7388e33855c
-          sortingKey: "000039"
-          contentHash: b68bead4
-          executionCount: 25
-          executionFinishedAt: 2026-04-10T22:07:05.912Z
-          executionStartedAt: 2026-04-10T22:07:05.502Z
-          type: code
-          content: >-
-            # Cargar el dataset
-
-            poblacion = pd.read_csv('/work/Poblacion por genero y edad.csv', encoding='latin-1')
-
-
-            # Mostrar todas las columnas
-
-            columnas = poblacion.columns.tolist()
-
-            print(columnas)
-          metadata:
-            execution_start: 1775858825502
-            execution_millis: 410
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 6525f71884364cca9b67a11c6a795d31
-          blockGroup: 9fef0e064f3b46fdbf248579829a826f
-          sortingKey: "000040"
-          contentHash: "87689608"
-          executionCount: 26
-          executionFinishedAt: 2026-04-10T22:07:05.963Z
-          executionStartedAt: 2026-04-10T22:07:05.963Z
-          type: code
-          content: >-
-            # Número total de filas y columnas del dataset
-
-            poblacion.shape
-          metadata:
-            execution_start: 1775858825963
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: b1b4eb74a48d4f06aded065beaf2d63e
-          blockGroup: 648300fa8ab149f8ab07630945cdd2af
-          sortingKey: "000041"
-          contentHash: 5f030723
-          executionCount: 27
-          executionFinishedAt: 2026-04-10T22:07:06.013Z
-          executionStartedAt: 2026-04-10T22:07:06.013Z
-          type: code
-          content: >-
-            # Comprobación de los tipos de datos
-
-            poblacion.dtypes
-          metadata:
-            execution_start: 1775858826013
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 3aa9835dba874f45b65c23bbe72bc5ff
-          blockGroup: fbb7e98ee2274ba0b1bc4f51de8c978b
-          sortingKey: "000042"
-          contentHash: e8afedf
-          executionCount: 28
-          executionFinishedAt: 2026-04-10T22:07:06.073Z
-          executionStartedAt: 2026-04-10T22:07:06.073Z
-          type: code
-          content: >-
-            # Verificación de valores nulos por columna
-
-            poblacion.isnull().sum()
-          metadata:
-            execution_start: 1775858826073
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 356c53d393f44c7da8d627169d4c133c
-          blockGroup: 063c72b3b8054c24937309d10bad6deb
-          sortingKey: "000043"
-          type: text-cell-h2
-          content: 1.3.2 Transformación
-          metadata:
-            formattedRanges: []
-        - id: 218288df5b7a4221949925fe6eb3a507
-          blockGroup: b7d11c9f36ce47f7a32bf5d4c1a9cef3
-          sortingKey: "000044"
-          contentHash: e7f85e66
-          executionCount: 29
-          executionFinishedAt: 2026-04-10T22:07:06.123Z
-          executionStartedAt: 2026-04-10T22:07:06.123Z
-          type: code
-          content: >-
-            # Se crea una copia sobre la cual realizar las transformaciones
-
-            poblacion_copia = poblacion.copy()
-          metadata:
-            execution_start: 1775858826123
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 9c81dfa8bcc14de19059a29fbbc168e6
-          blockGroup: aa714e9c21eb4b1cb9895a06a2bbd98c
-          sortingKey: "000045"
-          contentHash: 8e3a3ceb
-          executionCount: 30
-          executionFinishedAt: 2026-04-10T22:07:06.184Z
-          executionStartedAt: 2026-04-10T22:07:06.183Z
-          type: code
-          content: >-
-            # Normalización de nombres de columnas para mejorar la legibilidad
-
-            poblacion_copia = poblacion_copia.rename(
-                columns=
-                {'indicator': 'indicador',
-                'País__ESTANDAR': 'pais',
-                'Grupos quinquenales de edad': 'grupos_edad',
-                'Años__ESTANDAR': 'anios',
-                'value': 'miles_personas_a_mitad_anio'
-                }
-            )
-
-
-            # Mostrar el resultado
-
-            poblacion_copia.head(5)
-          metadata:
-            execution_start: 1775858826183
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: b30f4096aa6442a09acc049205ee90ef
-          blockGroup: 64c5fe97fa984d8a9a36650dfb297073
-          sortingKey: "000046"
-          contentHash: "53099027"
-          executionCount: 31
-          executionFinishedAt: 2026-04-10T22:07:06.253Z
-          executionStartedAt: 2026-04-10T22:07:06.253Z
-          type: code
-          content: >-
-            # Convertimos la columna 'valor' a string, cambiamos coma por punto y convertimos a float
-
-            poblacion_copia['miles_personas_a_mitad_anio'] = pd.to_numeric(
-                poblacion_copia['miles_personas_a_mitad_anio'].astype(str).str.replace(',', '.'), 
-                errors='coerce'
-            )
-
-
-            # Mostrar resultados
-
-            display(poblacion_copia[['miles_personas_a_mitad_anio']].head())
-
-            print(f"Nuevo tipo de dato: {poblacion_copia['miles_personas_a_mitad_anio'].dtype}")
-          metadata:
-            execution_start: 1775858826253
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 91657dab707e4abd93408c0a2ad67493
-          blockGroup: d2535bacbfb241b38863ac93826cf5c7
-          sortingKey: "000047"
-          contentHash: d5ab1a15
-          executionCount: 33
-          executionFinishedAt: 2026-04-10T22:07:06.364Z
-          executionStartedAt: 2026-04-10T22:07:06.363Z
-          type: code
-          content: >-
-            # Creamos la referencia con el año más nuevo de cada país
-
-            referencia_max = poblacion_copia.groupby('pais', as_index=False)['anios'].max()
-
-
-            # Filtramos el dataset por el último año disponible por país
-
-            poblacion_filtrada = poblacion_copia.merge(
-                referencia_max, 
-                on=['pais', 'anios'], 
-                how='inner'
-            )
-
-
-            # Verificamos el resultado
-
-            print(f"Filas originales: {len(poblacion_copia)}")
-
-            print(f"Filas filtradas: {len(poblacion_filtrada)}")
-
-            display(poblacion_filtrada.head(20))
-          metadata:
-            execution_start: 1775858826363
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 4e2d0fc214584635b4bb35ada7495152
-          blockGroup: 34a2001500804ba8ba67fb47325551cc
-          sortingKey: "000048"
-          contentHash: 6b95c163
-          executionCount: 34
-          executionFinishedAt: 2026-04-10T22:07:06.413Z
-          executionStartedAt: 2026-04-10T22:07:06.413Z
-          type: code
-          content: >-
-            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
-
-            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
-
-            poblacion_filtrada["pais"] = (
-                poblacion_filtrada["pais"]
-                .str.strip()
-                .str.upper()
-                .str.normalize('NFKD')
-                .str.encode('ascii', errors='ignore')
-                .str.decode('utf-8')
-            )
-
-
-            # Mostrar resultados
-
-            poblacion_filtrada['pais'].unique()
-          metadata:
-            execution_start: 1775858826413
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            deepnote_table_state:
-              sortBy: []
-              filters: []
-              pageSize: 10
-              pageIndex: 2
-              columnOrder:
-                - pais
-              hiddenColumnIds: []
-              columnDisplayNames: []
-              conditionalFilters: []
-              cellFormattingRules: []
-              wrappedTextColumnIds: []
-            deepnote_table_invalid: false
-            deepnote_table_loading: false
-        - id: 02ef75637b6b4983852ba57e4f643c90
-          blockGroup: b3f2867a45b84698aeb3fe82de7fb6d0
-          sortingKey: "000049"
-          contentHash: 2750c544
-          executionCount: 32
-          executionFinishedAt: 2026-04-10T22:07:06.313Z
-          executionStartedAt: 2026-04-10T22:07:06.313Z
-          type: code
-          content: >-
-            # Eliminación de columnas no significativas para el análisis
-
-            poblacion_copia = poblacion_copia.drop(
-                columns=['Sexo', 'unit', 'notes_ids', 'source_id'],
-                errors ='ignore'
-            )
-
-
-            # Mostrar el resultado
-
-            poblacion_copia.head(5)
-          metadata:
-            execution_start: 1775858826313
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 60751eb9199748658048ed3314a626d1
-          blockGroup: 72c4db558fc7424891347bf177c9b372
-          sortingKey: "000050"
-          contentHash: 65e4b706
-          executionCount: 35
-          executionFinishedAt: 2026-04-10T22:07:06.463Z
-          executionStartedAt: 2026-04-10T22:07:06.462Z
-          type: code
-          content: >-
-            # Cantidad de grupos etarios por país
-
-            poblacion_filtrada.groupby("pais")["grupos_edad"].nunique()
-          metadata:
-            execution_start: 1775858826462
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 05ff4da04c974f23bfd174e962c22d85
-          blockGroup: d7d279412f82489d9d3f69cf41bbb53a
-          sortingKey: "000051"
-          contentHash: d33edc95
-          executionCount: 36
-          executionFinishedAt: 2026-04-10T22:07:06.523Z
-          executionStartedAt: 2026-04-10T22:07:06.523Z
-          type: code
-          content: >-
-            # Inspección del dataset intermedio
-
-            poblacion_filtrada.head(20)
-          metadata:
-            execution_start: 1775858826523
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-            deepnote_table_state:
-              sortBy: []
-              filters: []
-              pageSize: 10
-              pageIndex: 0
-              columnOrder:
-                - indicador
-                - pais
-                - grupos_edad
-                - anios
-                - miles_personas_a_mitad_anio
-              hiddenColumnIds: []
-              columnDisplayNames: []
-              conditionalFilters: []
-              cellFormattingRules: []
-              wrappedTextColumnIds: []
-            deepnote_table_loading: false
-        - id: c669a9bcf95646a5bb38b9a8b28bd42b
-          blockGroup: 5e4a2a983711489991ba536b97b71a53
-          sortingKey: "000052"
-          type: text-cell-h2
-          content: 1.4. Consolidación de dataset de análisis
-          metadata:
-            formattedRanges: []
-        - id: 07d2c83da79c4a0ea9df3d8bfacd4e54
-          blockGroup: 62343155f4694212b7a12e54b9932e1f
-          sortingKey: "000053"
-          contentHash: 6b1a1393
-          executionCount: 43
-          executionFinishedAt: 2026-04-10T22:08:43.078Z
-          executionStartedAt: 2026-04-10T22:08:43.077Z
-          type: code
-          content: df_tiempo_internet.head(10)
-          metadata:
-            execution_start: 1775858923077
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 4f20fef52a9a490aafd3cd554f975f73
-          blockGroup: eafda2b52f45452e9a95ebd4202d9ccf
-          sortingKey: "000054"
-          contentHash: c7f0deaa
-          executionCount: 45
-          executionFinishedAt: 2026-04-10T22:08:58.261Z
-          executionStartedAt: 2026-04-10T22:08:58.254Z
-          type: code
-          content: df_poblacion.head(10)
-          metadata:
-            execution_start: 1775858938254
-            execution_millis: 7
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 1cf5a59cf9c7494dbef132f5a8dad022
-          blockGroup: cd106a373871433b950f90130bfa5182
-          sortingKey: "000055"
-          contentHash: dc1023ec
-          executionFinishedAt: 2026-04-10T18:48:12.840Z
-          executionStartedAt: 2026-04-10T18:48:12.840Z
-          type: code
-          content: >-
-            # Detección de países que no coinciden entre fuentes antes del merge
-
-            p1 = set(poblacion_filtrada["pais"])
-
-            p2 = set(df_tiempo_trabajo["pais"])
-
-            p3 = set(resultado_final["pais"])
-
-
-            print("Solo en población:", p1 - p2 - p3)
-
-            print("Solo en tiempo:", p2 - p1 - p3)
-
-            print("Solo en internet:", p3 - p1 - p2)
-          metadata:
-            execution_start: 1775846892840
-            execution_millis: 0
-            execution_context_id: 0eb8a57a-1d91-427e-9bc4-f834868344ae
-            deepnote_to_be_reexecuted: true
-        - id: cdfc38494f6f4d7b8b64397a0036eb68
-          blockGroup: ad52e4288efb491b8db74ac08e68d966
-          sortingKey: "000056"
-          contentHash: 90d22fa4
-          executionCount: 49
-          executionFinishedAt: 2026-04-10T22:09:59.164Z
-          executionStartedAt: 2026-04-10T22:09:59.163Z
-          type: code
-          content: df_tiempo_internet.dtypes
-          metadata:
-            execution_start: 1775858999163
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 53c409f457164128b6ef9a4825e80588
-          blockGroup: c47366a1e5bd4f94aae2e34d9c03d17c
-          sortingKey: "000057"
-          contentHash: 327c7893
-          executionCount: 51
-          executionFinishedAt: 2026-04-10T22:10:14.833Z
-          executionStartedAt: 2026-04-10T22:10:14.833Z
-          type: code
-          content: df_poblacion.dtypes
-          metadata:
-            execution_start: 1775859014833
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: adb2dbb4743a457eb06366b89256b0d6
-          blockGroup: 79c82e73819d4ab6a09ae8eba6791c39
-          sortingKey: "000058"
-          contentHash: c5644c1f
-          executionCount: 41
-          executionFinishedAt: 2026-04-10T22:08:38.173Z
-          executionStartedAt: 2026-04-10T22:08:38.173Z
-          type: code
-          content: >-
-            # Copias para el merge final (no se modifican los datasets del ETL)
-
-            df_poblacion = poblacion_filtrada.copy()
-
-            df_tiempo = df_tiempo_trabajo.copy()
-
-            df_internet = resultado_final.copy()
-
-
-            # Eliminación de columnas innecesarias SÓLO para la fase de merge
-
-            df_poblacion = df_poblacion.drop(columns=["indicador", "anios"])
-
-            df_tiempo = df_tiempo.drop(columns=["indicador", "anios"])
-
-            df_internet = df_internet.drop(columns=["anio", "edad"])
-
-
-            # ---------------------------------------------------
-
-            # DATASET 1: TIEMPO + INTERNET (nivel país)
-
-            # ---------------------------------------------------
-
-            df_tiempo_internet = df_tiempo.merge(df_internet, on="pais", how="left")
-
-
-            # ---------------------------------------------------
-
-            # DATASET 2: POBLACIÓN (nivel país + edad + cantidad de personas)
-
-            # ---------------------------------------------------
-
-            orden_edades = [
-                "0-4", "5-9", "10-14", "15-19", "20-24",
-                "25-29", "30-34", "35-39", "40-44", "45-49",
-                "50-54", "55-59", "60-64", "65-69", "70-74",
-                "75-79", "80-84", "85-89", "90-94", "95-99",
-                "100 y más"
-            ]
-
-
-            df_poblacion["grupos_edad"] = pd.Categorical(
-                df_poblacion["grupos_edad"],
-                categories=orden_edades,
-                ordered=True
-            )
-
-
-            df_poblacion = df_poblacion.sort_values(by=["pais", "grupos_edad"])
-          metadata:
-            execution_start: 1775858918173
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 1c7144fd1f464717a344f1aac0eba27e
-          blockGroup: 6cf562ed2f1e4210899d80e17de0483d
-          sortingKey: "000059"
-          type: text-cell-h1
-          content: 2. Análisis Exploratorio de Datos (EDA)
-          metadata:
-            formattedRanges: []
-        - id: 7791037314224ca4ac77c42f4fb4a718
-          blockGroup: b0554ef2168143978ad5819a03af89b9
-          sortingKey: "000060"
-          type: text-cell-p
-          content: En esta etapa realizamos un análisis exploratorio del dataset con el objetivo de comprender la estructura de
-            los datos y preparar la información para la construcción del mapa interactivo.
-          metadata:
-            formattedRanges: []
-        - id: 804e8f08769741cb9abbb98f12f503e7
-          blockGroup: 4ed04eca6d4d48cca09fb9eee0abc13e
-          sortingKey: "000061"
-          type: text-cell-p
-          content: "El EDA se enfoca en tres ejes principales:"
-          metadata:
-            formattedRanges: []
-        - id: f8c94d036fa44b7b8fee922b4a46225f
-          blockGroup: f256e3e004be4967a07e9afa328bbb1d
-          sortingKey: "000062"
-          type: text-cell-p
-          content: "A partir de estos ejes, se construyen indicadores que permiten resumir la información:"
-          metadata:
-            formattedRanges: []
-        - id: 66e2ffb25c6546749b10f374fdb5f5c8
-          blockGroup: 4bfa9d57fa6545a6ba35f53676a0887c
-          sortingKey: "000063"
-          type: text-cell-p
-          content: >-
-            - Carga de cuidados  
-
-            - Brecha digital  
-
-            - Vulnerabilidad estructural  
-
-            - Peso poblacional en edad activa  
-
-            - Impacto total  
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 19
-                fromCodePoint: 2
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 38
-                fromCodePoint: 24
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 71
-                fromCodePoint: 43
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 105
-                fromCodePoint: 74
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 125
-                fromCodePoint: 110
-        - id: 689c640352e6444b8787807241455590
-          blockGroup: 0909ce21870d449bae849b6a08df47fa
-          sortingKey: "000064"
-          type: text-cell-p
-          content: >-
-            - Distribución poblacional femenina por país en edad activa, para identificar dónde se concentra la
-            población con mayor potencial de participación en el trabajo remunerado.
-
-            - Carga de trabajo (remunerado y no remunerado), con especial énfasis en la proporción de trabajo no
-            remunerado como indicador de carga de cuidados.
-
-            - Brecha digital, analizando el nivel de uso de internet como aproximación al acceso a conectividad.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 59
-                fromCodePoint: 2
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 191
-                fromCodePoint: 175
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 338
-                fromCodePoint: 324
-        - id: e780c13225c2497aa06f7556179f37f7
-          blockGroup: 75408b9799c14f4cabe4dab2dd01aeac
-          sortingKey: "000065"
-          type: text-cell-p
-          content: El objetivo del EDA es identificar patrones entre países y generar los insumos necesarios para el desarrollo
-            del índice y el mapa interactivo final.
-          metadata:
-            formattedRanges: []
-        - id: a079361bb8dc4559bf05842262487357
-          blockGroup: 7ca88651bc4f4bea82892f06be25f99a
-          sortingKey: "000066"
-          type: text-cell-h2
-          content: 2.1. Carga de cuidados
-          metadata:
-            formattedRanges: []
-        - id: b9b54a6142f741d6b7e6d7781f5b7c54
-          blockGroup: 088c0c92a5eb4f01af26e6664fe04ea1
-          sortingKey: "000067"
-          type: text-cell-p
-          content: >-
-            Mide la proporción del tiempo total de trabajo femenino que se destina a trabajo no remunerado (cuidados y
-            tareas domésticas).
-
-
-            Cálculo: tiempo de trabajo no remunerado / tiempo total de trabajo
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 135
-                fromCodePoint: 128
-        - id: 60eace6e272049018ca5177b2f86608f
-          blockGroup: 8c2d330ec0ce49b2ac4232f36c12cea3
-          sortingKey: "000068"
-          contentHash: d8e2f37
-          executionCount: 53
-          executionFinishedAt: 2026-04-10T22:27:50.373Z
-          executionStartedAt: 2026-04-10T22:27:50.373Z
-          type: code
-          content: >-
-            import numpy as np
-
-
-            df_tiempo_internet["carga_cuidados"] = (
-                df_tiempo_internet["tiempo_trabajo_no_remunerado"] /
-                df_tiempo_internet["tiempo_total_trabajo"].replace(0, np.nan)
-            ) * 100
-          metadata:
-            execution_start: 1775860070373
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 54c1d6d493984bcb96bdf5d1cd1ab092
-          blockGroup: 735c9d6d5421468293bef3a8f0f841c0
-          sortingKey: "000069"
-          contentHash: f028bbab
-          executionCount: 57
-          executionFinishedAt: 2026-04-10T22:28:10.723Z
-          executionStartedAt: 2026-04-10T22:28:10.723Z
-          type: code
-          content: >-
-            # Obtenemos un resumen general
-
-            df_tiempo_internet["carga_cuidados"].describe()
-          metadata:
-            execution_start: 1775860090723
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 823f78fe3d9141098fa6ea12f8c040a6
-          blockGroup: 38544aa2c6ab4354bf30ef46e0a16fa6
-          sortingKey: "000070"
-          contentHash: b164320a
-          executionCount: 55
-          executionFinishedAt: 2026-04-10T22:27:55.316Z
-          executionStartedAt: 2026-04-10T22:27:55.314Z
-          type: code
-          content: >-
-            # Revisamos las primeras filas
-
-            df_tiempo_internet[
-                ["pais",
-                "tiempo_total_trabajo", "tiempo_trabajo_no_remunerado",
-                "carga_cuidados"]
-            ].head(10)
-          metadata:
-            execution_start: 1775860075314
-            execution_millis: 2
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 3a6dece7c56f4edd94feb5c1f4d2270a
-          blockGroup: bb2cc68d637d4310b1c4665fd6ac3ed9
-          sortingKey: "000071"
-          contentHash: ca7918b8
-          executionCount: 59
-          executionFinishedAt: 2026-04-10T22:32:02.223Z
-          executionStartedAt: 2026-04-10T22:32:02.223Z
-          type: code
-          content: >-
-            # Ranking de carga de cuidados por país en mujeres
-
-            df_tiempo_internet[["pais", "carga_cuidados"]].sort_values(
-                by="carga_cuidados",
-                ascending=False
-            )
-          metadata:
-            execution_start: 1775860322223
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 8d55ff831acc4e6f968e9d07797a1a41
-          blockGroup: 2adf0a7010a44e7eadb98ced4d795379
-          sortingKey: "000072"
-          type: text-cell-p
-          content: "Conclusión preliminar: Observamos que Guatemala es el país, dentro de la muestra analizada, donde las mujeres
-            presentan una mayor carga de cuidados, dedicando un 74.42% de su tiempo de trabajo a tareas no remuneradas.
-            Le sigue El Salvador con un 67.49%."
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 21
-                fromCodePoint: 0
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 47
-                fromCodePoint: 38
-        - id: ea2f5154667c4c678f0c4aa0741ca3e5
-          blockGroup: 25ec4cdb0c7f48d49edc0007bfc61476
-          sortingKey: "000073"
-          type: text-cell-h2
-          content: 2.2. Brecha digital
-          metadata:
-            formattedRanges: []
-        - id: 103848b6ee124a54a2972810da5e88d4
-          blockGroup: ee574114421045738f4755aa18d1151a
-          sortingKey: "000074"
-          type: text-cell-p
-          content: Mide el nivel de acceso faltante a internet en la población femenina, como aproximación a la brecha de
-            conectividad digital. Los valores más altos indican menor nivel de acceso y mayor brecha digital. Por
-            ejemplo, si el 70% de la población usa internet, la brecha digital es del 30%.
-          metadata:
-            formattedRanges: []
-        - id: 2593a47d6f554d53b0343abe081aefb8
-          blockGroup: e4f41dbb7bd84a7196093bdb7002630b
-          sortingKey: "000075"
-          type: text-cell-p
-          content: "Cálculo: 100 - % uso de internet"
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 7
-                fromCodePoint: 0
-        - id: 754549c50a144350a5c2446f7d50ad17
-          blockGroup: 7e6c6854fa9448b089f0836a1a20e0f2
-          sortingKey: "000076"
-          contentHash: e468d977
-          executionCount: 61
-          executionFinishedAt: 2026-04-10T22:34:52.833Z
-          executionStartedAt: 2026-04-10T22:34:52.833Z
-          type: code
-          content: df_tiempo_internet["brecha_digital"] = 100 - df_tiempo_internet["porcentaje_uso_internet"]
-          metadata:
-            execution_start: 1775860492833
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: b19f50208b0940289f045e038c84254c
-          blockGroup: 5a0ace5c54644f8f8a418a4b2f0781aa
-          sortingKey: "000077"
-          contentHash: a9cb97e
-          executionCount: 63
-          executionFinishedAt: 2026-04-10T22:34:57.723Z
-          executionStartedAt: 2026-04-10T22:34:57.722Z
-          type: code
-          content: >-
-            # Revisamos las primeras filas
-
-            df_tiempo_internet[["pais", "porcentaje_uso_internet", "brecha_digital"]].head(10)
-          metadata:
-            execution_start: 1775860497722
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: bb045ec68fcc40cb83e3f2248564b9df
-          blockGroup: 92c2832adb7b496999d29b625e284a03
-          sortingKey: "000078"
-          type: text-cell-p
-          content: "Conclusión preliminar: Se observa una tendencia en la que Guatemala y El Salvador presentan simultáneamente
-            mayor carga de cuidados y menor acceso a internet (51.45% y 47.62%, respectivamente) dentro de la muestra
-            analizada, lo que sugiere posibles contextos de mayor vulnerabilidad relativa."
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 21
-                fromCodePoint: 0
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 67
-                fromCodePoint: 58
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 81
-                fromCodePoint: 70
-        - id: 75c791d1ce4d4289ab075d0dca2c3c61
-          blockGroup: ccca92233e08405cbc910b64335aee5d
-          sortingKey: "000079"
-          type: text-cell-h2
-          content: 2.3. Vulnerabilidad estructural
-          metadata:
-            formattedRanges: []
-        - id: b7985b69b7c546e7be8aee56025e89aa
-          blockGroup: 50ece82d7f44401e8f9fb0a28fdf47eb
-          sortingKey: "000080"
-          type: text-cell-p
-          content: >-
-            Mide la combinación de carga de cuidados y brecha digital, como un indicador agregado del nivel de
-            vulnerabilidad estructural. Este es el índice combinado del proyecto, que integra ambas variables en un
-            puntaje de riesgo para identificar los contextos más críticos por país.
-
-
-            Cálculo: (carga de cuidados + brecha digital) / 2
-
-            Es decir, se calcula el valor medio entre ambos problemas. Los valores más altos indican mayor
-            vulnerabilidad estructural, al combinar mayor carga de cuidados y menor acceso digital.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 155
-                fromCodePoint: 138
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 283
-                fromCodePoint: 276
-        - id: 3aff26fc86414b4da27b1f628f7758ee
-          blockGroup: 44eccb873bc946bc9e379edd5ee01b0c
-          sortingKey: "000081"
-          contentHash: a2ecf05a
-          executionCount: 67
-          executionFinishedAt: 2026-04-10T22:37:03.983Z
-          executionStartedAt: 2026-04-10T22:37:03.982Z
-          type: code
-          content: >-
-            df_tiempo_internet["vulnerabilidad"] = (
-                df_tiempo_internet["carga_cuidados"] + df_tiempo_internet["brecha_digital"]
-            ) / 2
-          metadata:
-            execution_start: 1775860623982
-            execution_millis: 1
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 1dd9f1c33b7a4af18fc107c69a149f6a
-          blockGroup: 775bccd5023944d3a6c9a7fa96338d29
-          sortingKey: "000082"
-          contentHash: 5402c8d5
-          executionCount: 69
-          executionFinishedAt: 2026-04-10T22:37:10.002Z
-          executionStartedAt: 2026-04-10T22:37:10.002Z
-          type: code
-          content: >-
-            # Revisamos las primeras filas
-
-            df_tiempo_internet[["pais", "carga_cuidados", "brecha_digital", "vulnerabilidad"]].head(10)
-          metadata:
-            execution_start: 1775860630002
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 80014fd6467841c3ae440ce481d0496a
-          blockGroup: 20547fe961744058acd4035fa467263a
-          sortingKey: "000083"
-          contentHash: b8be9be3
-          executionCount: 65
-          executionFinishedAt: 2026-04-10T22:35:08.333Z
-          executionStartedAt: 2026-04-10T22:35:08.333Z
-          type: code
-          content: >-
-            # Ranking de uso de internet por país en mujeres
-
-            df_tiempo_internet[["pais", "brecha_digital"]].sort_values(
-                by="brecha_digital",
-                ascending=False
-            )
-          metadata:
-            execution_start: 1775860508333
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: b37b234b0ce5421bb02f43d6595f69b1
-          blockGroup: 98e5be7730df42abb84efdbc9e4019f7
-          sortingKey: "000084"
-          contentHash: 2319beb1
-          executionCount: 71
-          executionFinishedAt: 2026-04-10T22:39:03.723Z
-          executionStartedAt: 2026-04-10T22:39:03.723Z
-          type: code
-          content: >-
-            # Ranking de vulnerabilidad estructural por país
-
-            df_tiempo_internet[["pais", "vulnerabilidad"]].sort_values(
-                by="vulnerabilidad",
-                ascending=False
-            )
-          metadata:
-            execution_start: 1775860743723
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: e2abcc02b43947728fde5074e8db92b5
-          blockGroup: d656002764564dc0b68f2d785d1b1389
-          sortingKey: "000085"
-          type: text-cell-p
-          content: "Conclusión preliminar: Los resultados de este índice combinado refuerzan, a nivel general, las conclusiones
-            preliminares obtenidas en los análisis previos, evidenciando patrones consistentes entre carga de cuidados y
-            brecha digital. En conjunto, este indicador permite sintetizar en una sola medida dos dimensiones
-            estructurales clave del problema, facilitando la comparación entre países y la identificación de tendencias
-            generales dentro de la muestra. Asimismo, resulta clave para identificar contextos prioritarios de
-            intervención, ya que permite reconocer los países con situaciones más críticas en términos de vulnerabilidad
-            estructural."
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 21
-                fromCodePoint: 0
-        - id: 822b382aa6a644b6b3a891646f9713ca
-          blockGroup: 6c9d3e2c45664bcf9a2f4d0eaa1c3e17
-          sortingKey: "000086"
-          contentHash: 7d346439
-          executionCount: 73
-          executionFinishedAt: 2026-04-10T22:39:31.813Z
-          executionStartedAt: 2026-04-10T22:39:31.813Z
-          type: code
-          content: df_tiempo_internet
-          metadata:
-            execution_start: 1775860771813
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: a0701a01ee6d4101a1b52355281f76d2
-          blockGroup: 5f794d6045fb4b0f886a832de7825aca
-          sortingKey: "000087"
-          type: text-cell-h2
-          content: 2.4. Peso poblacional (edad activa)
-          metadata:
-            formattedRanges: []
-        - id: 73a4603c616a4445a5fa58ea0ce503b3
-          blockGroup: 2bec436913e24ceb9df79e47c45110a0
-          sortingKey: "000088"
-          type: text-cell-p
-          content: >-
-            Calcula la proporción de mujeres en edad activa en cada país, como aproximación al volumen de población
-            potencialmente expuesta a las condiciones de trabajo y brecha digital. Este indicador se incorpora para
-            dimensionar la magnitud real del problema en cada país, ya que no solo importa la intensidad de la
-            vulnerabilidad estructural, sino también qué porcentaje de mujeres en la edad mencionada se ven afectadas.
-            De este modo, permite contextualizar el impacto potencial de las condiciones analizadas y aportar una mirada
-            de escala poblacional al análisis.
-
-
-            La elección del rango etario 15–64 no implica que el resto de los grupos no sea relevante, sino que responde
-            al recorte analítico del proyecto, el cual se enmarca dentro de la categoría “trabajo remunerado”. En este
-            sentido, se prioriza la denominada “población en edad de trabajar”, definida por la OECD (Organización para
-            la Cooperación y el Desarrollo Económico) como la proporción de personas entre 15 y 64 años respecto del
-            total de la población.
-
-
-            Cálculo: (suma de miles de personas en los grupos de edad 15–64) / total de mujeres del país
-
-
-            Los valores más altos indican una mayor proporción de mujeres en edad activa dentro del país.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 544
-                fromCodePoint: 525
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 593
-                fromCodePoint: 575
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 1019
-                fromCodePoint: 1012
-        - id: f1249e45284c44e0ab516852ca29149e
-          blockGroup: c9c9475ff3804bd2bfefaa5cce70d79e
-          sortingKey: "000089"
-          contentHash: bf2519c1
-          executionCount: 75
-          executionFinishedAt: 2026-04-10T22:43:03.373Z
-          executionStartedAt: 2026-04-10T22:43:03.373Z
-          type: code
-          content: >-
-            # Filtramos el dataset y sólo dejamos las filas correspondientes al grupo etario de 15-64 años
-
-            df_activa = df_poblacion[df_poblacion["grupos_edad"].isin([
-                "15-19","20-24","25-29","30-34","35-39",
-                "40-44","45-49","50-54","55-59","60-64"
-            ])]
-
-
-            # Cálculo de población total por país (todas las edades)
-
-            pob_total = df_poblacion.groupby("pais")["miles_personas_a_mitad_anio"].sum()
-
-
-            # Cálculo de población en edad activa por país
-
-            pob_activa = df_activa.groupby("pais")["miles_personas_a_mitad_anio"].sum()
-
-
-            # Cálculo del peso poblacional de la edad activa
-
-            peso_poblacional = (pob_activa / pob_total) * 100
-          metadata:
-            execution_start: 1775860983373
-            execution_millis: 0
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 5e06461b0e18482e8a4a6d5cc7cf6a53
-          blockGroup: e23c06716f064df9b0973ee5fd4de5b0
-          sortingKey: "000090"
-          contentHash: 7fafb34e
-          executionCount: 77
-          executionFinishedAt: 2026-04-10T22:43:12.734Z
-          executionStartedAt: 2026-04-10T22:43:12.731Z
-          type: code
-          content: >-
-            # Ranking de países de mayor a menor proporción de mujeres en edad activa
-
-            peso_poblacional.sort_values(ascending=False)
-          metadata:
-            execution_start: 1775860992731
-            execution_millis: 3
-            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
-        - id: 568dce169dec4fdeaffe986c89283cd5
-          blockGroup: 2ec9ecf5a04340d7b0518f466d106aea
-          sortingKey: "000091"
-          type: text-cell-h2
-          content: 2.5. Riesgo poblacional
-          metadata:
-            formattedRanges: []
-        - id: 48bccf659d9744868c89e63193783791
-          blockGroup: 038cf6b2abf94634b7a592452b18fc47
-          sortingKey: "000092"
-          type: text-cell-p
-          content: >-
-            El riesgo poblacional permite identificar qué países concentran mayor nivel de criticidad dentro del
-            análisis, combinando la vulnerabilidad estructural con el peso de la población en edad activa. De esta
-            manera, no solo se considera la intensidad de las condiciones de desigualdad en términos de carga de
-            cuidados y brecha digital, sino también cuántas mujeres están potencialmente expuestas a estas condiciones
-            en cada país.
-
-
-            Cálculo: vulnerabilidad estructural * proporción de población en edad activa
-
-
-            Esto permite obtener una medida integrada del impacto potencial del problema en cada contexto nacional. En
-            este sentido, valores más altos indican países donde la combinación entre condiciones estructurales adversas
-            y mayor exposición poblacional en edad activa genera escenarios más críticos, lo que resulta clave para la
-            identificación de prioridades de intervención.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 151
-                fromCodePoint: 125
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 194
-                fromCodePoint: 159
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 434
-                fromCodePoint: 427
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 797
-                fromCodePoint: 774
-        - id: 2f5d253655bc4ed082fd19ec2239f4d8
-          blockGroup: 9fa12f7f44c0437f9b9ebe0e49e877cc
-          sortingKey: "000093"
-          type: text-cell-p
-          content: >-
-            Conclusión preliminar: Se observa una distribución relativamente homogénea de la población femenina en edad
-            activa entre los países analizados, con variaciones acotadas entre el 63% y el 68%, lo que sugiere que las
-            diferencias en el impacto del índice estarán principalmente determinadas por el grado de vulnerabilidad
-            estructural y no por la composición demográfica.
-
-            No obstante, se trata en todos los casos de más de la mitad de la población femenina, lo que refuerza la
-            relevancia de considerar este aspecto en el análisis de la problemática.
-          metadata:
-            formattedRanges:
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 21
-                fromCodePoint: 0
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 74
-                fromCodePoint: 38
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 181
-                fromCodePoint: 178
-              - type: marks
-                marks:
-                  bold: true
-                toCodePoint: 190
-                fromCodePoint: 187
-      executionMode: block
-      id: 7f0dbf49f4664fc6a12a709ff68c766b
-      isModule: false
-      name: Draft
     - blocks:
         - id: c6d0e33334ce4a088ba5db37ec609c9e
           blockGroup: 94f69d19c381425da4486a5177ca3739
@@ -4294,4 +2329,2098 @@ project:
       isModule: false
       name: Trabajo_Remunerado_DATA4CCION/notebooks/Databases_DAT4CCION
       workingDirectory: notebooks
+    - blocks:
+        - id: bc35880d9eb042fbb358bad3741b2ccf
+          blockGroup: ef13f09170064348b9295c1886681aba
+          sortingKey: "000000"
+          type: text-cell-h2
+          content: Fuentes de Datos
+          metadata:
+            formattedRanges: []
+        - id: fca11f23dd4643e1b625dec6d42b65f2
+          blockGroup: 472612c0c54d46f7a98931deab1e386a
+          sortingKey: "000001"
+          type: text-cell-p
+          content: "La arquitectura de datos de este estudio se fundamenta en la integración y armonización de tres repositorios
+            internacionales clave:
+
+
+            - Brecha digital: \"Percentage of individuals using the Internet - at least once a day\" | Worldbank.
+
+            Link:
+            https://data360.worldbank.org/en/indicator/ITU_DH_INT_USR_DAY?sex=F&age=Y_GE75%2CY15T24%2CY0T14%2CY25T74&ur\
+            banisation=_T&recentYear=false&view=datatable
+
+            \r
+
+            - Carga de cuidados: \"Tiempo total de trabajo\" | Observatorio de Igualdad de Género de América Latina y el
+            Caribe (CEPAL).
+
+            Link: https://oig.cepal.org/es/indicadores?id=2286\ 
+
+            \r
+
+            \ - Edad: \"Estructura de la población por sexo y por grupos de edad (Porcentaje)\" | CEPALSTAT.
+
+            Link: https://statistics.cepal.org/portal/cepalstat/dashboard.html?theme=1&lang=es"
+          metadata:
+            formattedRanges:
+              - url: https://statistics.cepal.org/portal/cepalstat/dashboard.html?theme=1&lang=es
+                type: link
+                ranges: []
+                toCodePoint: 747
+                fromCodePoint: 671
+        - id: de1be828fdb3489d8d7939f813970072
+          blockGroup: 10d9711f0f60478987c247d8c70d6328
+          sortingKey: "000002"
+          type: text-cell-h2
+          content: "Dónde se concentran las barreras al trabajo remunerado femenino: brecha digital y carga de cuidados en América
+            Latina para identificar contextos prioritarios de intervención"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  italic: true
+                toCodePoint: 173
+                fromCodePoint: 0
+        - id: 619d2e4c0ba3416e9705ca15917b6907
+          blockGroup: 92ae51d505fd4a068eee6364db884508
+          sortingKey: "000003"
+          type: text-cell-p
+          content: >-
+            Este proyecto investiga la intersección entre la brecha digital y la carga de cuidados como barreras
+            estructurales fundamentales para el acceso de las mujeres al mercado laboral remunerado en la región de
+            América Latina.
+
+
+            1. Alcance geográfico y temporal
+
+            La selección de la muestra comprende nueve países de América Latina, priorizados bajo el criterio de
+            densidad y consistencia de datos en los tres repositorios integrados en este proyecto::
+
+            - Cono Sur: Argentina, Uruguay, Chile.
+
+            - Región Andina: Colombia, Perú.
+
+            - Centroamérica y Caribe: Costa Rica, Guatemala, El Salvador, República Dominicana.
+
+
+            El análisis se encuadra en el período 2021-2025. Se estableció esta ventana temporal breve para garantizar
+            la actualidad de los hallazgos y permitir la generalización de conclusiones entre los años incluidos,
+            asumiendo que las variaciones estructurales en este intervalo son mínimas y permiten una comparación válida.
+
+
+            2. Definición de Variables
+
+            La arquitectura del análisis se organiza bajo la siguiente jerarquía:
+
+            - Variables Primarias (Barreras): Carga de cuidados y Brecha digital.
+
+            - Variable Secundaria (Filtro): Edad.
+
+
+            3. Propuesta de Solución basada en datos
+
+            La propuesta consiste en un mapa interactivo diseñado para un análisis dinámico y detallado. Esta
+            herramienta permite identificar geográficamente los nudos críticos donde las variables de brecha digital y
+            carga de cuidados se intensifican, facilitando la detección de contextos prioritarios de intervención.
+
+
+            4. Fases del Proyecto
+
+            1. ETL: Extracción, transformación y carga de los datos provenientes de los tres repositorios.
+
+            2. Análisis Exploratorio de Datos (EDA): Diagnóstico de patrones y concentraciones de barreras.
+
+            3. Construcción del Mapa Interactivo: Implementación de la capa de visualización geoespacial.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 63
+                fromCodePoint: 49
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 86
+                fromCodePoint: 69
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 254
+                fromCodePoint: 222
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 648
+                fromCodePoint: 639
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 946
+                fromCodePoint: 920
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 1166
+                fromCodePoint: 1126
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 1211
+                fromCodePoint: 1195
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 1497
+                fromCodePoint: 1476
+        - id: 653787cb28b14be08821c7b0c0b90d30
+          blockGroup: dbe74fc58b1b4eb89a88240b6162044d
+          sortingKey: "000004"
+          type: text-cell-p
+          content: En esta etapa, se realiza una exploración de los tres datasets para evaluar la calidad de los mismos, tipos de
+            datos, columnas existentes, valores faltantes y posibles duplicados. A partir de esto, se aplicará un
+            proceso de limpieza y transformación con el fin de unificar toda la información en un único dataset para las
+            etapas posteriores de análisis exploratorio de datos (EDA) y georreferenciación en el mapa interactivo.
+          metadata:
+            formattedRanges: []
+        - id: c8d2e865028540ea96dd7c680f4d6c03
+          blockGroup: bf7cf0ab577a40908ba1c57772f343f1
+          sortingKey: "000005"
+          type: text-cell-h2
+          content: '1.1. Dataset 1: "Percentage of individuals using the Internet - at least once a day"'
+          metadata:
+            formattedRanges: []
+        - id: c638a24d46bb485cb31c46b02e09a991
+          blockGroup: abdb135782924c8da4256c1b2db1f134
+          sortingKey: "000006"
+          type: text-cell-h2
+          content: 1.1.1 Extracción y exploración del dataset
+          metadata:
+            formattedRanges: []
+        - id: 72943bf4b7544ea6954f8049f5529fd6
+          blockGroup: b4b2bc23380c4f19ab61d5f0b52dd256
+          sortingKey: "000007"
+          contentHash: 5499c082
+          executionCount: 1
+          executionFinishedAt: 2026-04-10T23:47:23.714Z
+          executionStartedAt: 2026-04-10T23:47:23.252Z
+          type: code
+          content: >-
+            import pandas as pd
+
+
+            # Cargar el dataset
+
+            internet = pd.read_csv('/work/Uso del Internet.csv')
+
+
+            # Mostrar todas las columnas
+
+            internet_columns = internet.columns.tolist()
+
+            internet_columns
+          metadata:
+            execution_start: 1775864843252
+            execution_millis: 462
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            sql_integration_id: ""
+            deepnote_variable_name: ""
+        - id: 89bfab1960a7411197b18c51dc3c75ff
+          blockGroup: 1405d95ddd6e4b039896e2130df06302
+          sortingKey: "000008"
+          contentHash: 65267c68
+          executionCount: 2
+          executionFinishedAt: 2026-04-10T23:47:23.773Z
+          executionStartedAt: 2026-04-10T23:47:23.773Z
+          type: code
+          content: >-
+            # Número total de filas y columnas del dataset
+
+            internet.shape
+          metadata:
+            execution_start: 1775864843773
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 971031fdf83c4cf594b32c991778ad78
+          blockGroup: fa84e564776841b0bc47757c69378bf1
+          sortingKey: "000009"
+          contentHash: "96969643"
+          executionCount: 3
+          executionFinishedAt: 2026-04-10T23:47:23.833Z
+          executionStartedAt: 2026-04-10T23:47:23.833Z
+          type: code
+          content: >-
+            # Comprobación de los tipos de datos
+
+            internet.dtypes
+          metadata:
+            execution_start: 1775864843833
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 1d1cad01b3414db4996b24fe87cf201d
+          blockGroup: bcc84910615b45a3ae1ba364b5408040
+          sortingKey: "000010"
+          contentHash: e40280fa
+          executionCount: 4
+          executionFinishedAt: 2026-04-10T23:47:23.893Z
+          executionStartedAt: 2026-04-10T23:47:23.893Z
+          type: code
+          content: >-
+            # Verificación de valores nulos por columna
+
+            internet.isnull().sum()
+          metadata:
+            execution_start: 1775864843893
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 2b1dff2c1e304636b7842085fbfe0a30
+          blockGroup: 1c093d10b32f42afbdbb89c03e9a6adb
+          sortingKey: "000011"
+          type: text-cell-h2
+          content: 1.1.2. Transformación
+          metadata:
+            formattedRanges: []
+        - id: 03af5660e71046f9aa4906527fdc3f9b
+          blockGroup: 646c778868c74df5b0784f7cb203151b
+          sortingKey: "000012"
+          type: text-cell-h1
+          content: 1. ETL | Extracción, transformación y carga de datos
+          metadata:
+            formattedRanges: []
+        - id: 39e093169316448c85ae5ce511d227b8
+          blockGroup: 983a685d36c24ace9263a641131f6d0a
+          sortingKey: "000013"
+          contentHash: 3892ef74
+          executionCount: 5
+          executionFinishedAt: 2026-04-10T23:47:23.953Z
+          executionStartedAt: 2026-04-10T23:47:23.953Z
+          type: code
+          content: >
+            df = internet.copy()
+
+
+            # Limpiar columnas
+
+            for c in ['SEX_LABEL', 'AGE_LABEL', 'REF_AREA_LABEL', 'INDICATOR_LABEL']:
+                if c in df.columns:
+                    df[c] = df[c].astype(str).str.strip()
+
+            # Convertir año
+
+            df['TIME_PERIOD'] = pd.to_numeric(df['TIME_PERIOD'], errors='coerce').astype('Int64')
+
+
+            # Eliminar nulos clave
+
+            df = df.dropna(subset=['SEX_LABEL', 'REF_AREA_LABEL', 'TIME_PERIOD'])
+
+
+            # Países correctos
+
+            paises_objetivo = [
+                'Argentina', 'Colombia', 'Dominican Republic', 'Costa Rica',
+                'Guatemala', 'Uruguay', 'Chile', 'El Salvador', 'Peru'
+            ]
+
+
+            # Filtros
+
+            mask_mujeres = df['SEX_LABEL'] == 'Female'
+
+            mask_anios = df['TIME_PERIOD'].between(2020, 2025)
+
+            mask_paises = df['REF_AREA_LABEL'].isin(paises_objetivo)
+
+            # Aplicar filtros principales
+
+            filtrado = df[mask_mujeres & mask_anios & mask_paises]
+
+
+            # QUEDARSE SOLO con el total (sin desglose por edad)
+
+            filtrado = filtrado[
+                filtrado['AGE_LABEL'] == 'All age ranges or no breakdown by age'
+            ]
+
+
+            # Seleccionar columnas incluyendo OBS_VALUE
+
+            columnas = ['REF_AREA_LABEL', 'TIME_PERIOD', 'AGE_LABEL', 'OBS_VALUE']
+
+            columnas = [col for col in columnas if col in filtrado.columns]
+
+
+            resultado = filtrado[columnas].sort_values(
+                ['REF_AREA_LABEL', 'TIME_PERIOD']
+            )
+
+
+            print("Filas filtradas:", len(resultado))
+
+            display(resultado)
+          metadata:
+            execution_start: 1775864843953
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 100
+              pageIndex: 0
+              columnOrder:
+                - REF_AREA_LABEL
+                - TIME_PERIOD
+                - AGE_LABEL
+                - OBS_VALUE
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_invalid: false
+            deepnote_table_loading: false
+        - id: 9c43ba0793ff45ed9b16de734af157fe
+          blockGroup: 65a6a9bf1363405c931b0058ec1bf7f6
+          sortingKey: "000014"
+          contentHash: f49a64b7
+          executionCount: 6
+          executionFinishedAt: 2026-04-10T23:47:24.003Z
+          executionStartedAt: 2026-04-10T23:47:24.002Z
+          type: code
+          content: print(sorted(resultado['REF_AREA_LABEL'].unique()))
+          metadata:
+            execution_start: 1775864844002
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 64262920f29b4480826a80a96375616a
+          blockGroup: 949ee2633c4d40c4b576c38db3e42b3a
+          sortingKey: "000015"
+          contentHash: 4bffe150
+          executionCount: 7
+          executionFinishedAt: 2026-04-10T23:47:24.063Z
+          executionStartedAt: 2026-04-10T23:47:24.063Z
+          type: code
+          content: >-
+            # Obtener el último año por país (tabla pequeña)
+
+            ultimos_anios = resultado.groupby('REF_AREA_LABEL', as_index=False)['TIME_PERIOD'].max()
+
+
+            # Unir con los datos originales
+
+            resultado_final = resultado.merge(
+                ultimos_anios,
+                on=['REF_AREA_LABEL', 'TIME_PERIOD'],
+                how='inner'
+            )
+
+
+            # Ordenar
+
+            resultado_final = resultado_final.sort_values(
+                ['REF_AREA_LABEL', 'AGE_LABEL']
+            )
+
+
+            display(resultado_final)
+          metadata:
+            execution_start: 1775864844063
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 50
+              pageIndex: 0
+              columnOrder:
+                - REF_AREA_LABEL
+                - TIME_PERIOD
+                - AGE_LABEL
+                - OBS_VALUE
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_invalid: false
+            deepnote_table_loading: false
+        - id: 243491b8a96f420fb0f62be2b376ec83
+          blockGroup: 1eda10d20b924c1cb1253dbf06464e76
+          sortingKey: "000016"
+          contentHash: e39974d2
+          executionCount: 8
+          executionFinishedAt: 2026-04-10T23:47:24.123Z
+          executionStartedAt: 2026-04-10T23:47:24.122Z
+          type: code
+          content: >-
+            # Normalización de nombres de columnas para mejorar la legibilidad
+
+            resultado_final = resultado_final.rename(
+                columns=
+                {'REF_AREA_LABEL': 'pais',
+                'TIME_PERIOD': 'anio',
+                'AGE_LABEL': 'edad',
+                'OBS_VALUE': 'porcentaje_uso_internet'}
+            )
+
+
+            # Mostrar el resultado
+
+            resultado_final.head(10)
+          metadata:
+            execution_start: 1775864844122
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: a9f7adb602144ff48020890f664e8bf8
+          blockGroup: ff91124ac2264b7a884ee017e7e1cec9
+          sortingKey: "000017"
+          contentHash: 6df1eba9
+          executionCount: 9
+          executionFinishedAt: 2026-04-10T23:47:24.173Z
+          executionStartedAt: 2026-04-10T23:47:24.130Z
+          type: code
+          content: >-
+            # Definimos diccionario de reemplazos al español
+
+            dicc_paises= {
+                'Argentina': 'Argentina',
+                'Chile': 'Chile',
+                'Colombia': 'Colombia',
+                'Costa Rica': 'Costa Rica',
+                'Dominican Republic': 'Republica Dominicana', 
+                'El Salvador': 'El Salvador',
+                'Guatemala': 'Guatemala',
+                'Peru': 'Peru',
+                'Uruguay': 'Uruguay'
+                }
+
+            # Aplicamos el reemplazo en la columna 'pais'
+
+            resultado_final['pais'] = resultado_final['pais'].replace(dicc_paises)
+
+
+            # Verificación de resultados
+
+            print("Países procesados:")
+
+            print(resultado_final['pais'].unique())
+
+
+            resultado_final.head(10)
+          metadata:
+            execution_start: 1775864844130
+            execution_millis: 43
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 63d9c6f3a37c431db487b59cc0a4b652
+          blockGroup: c808c9aacc0d44dca3178acf47b74109
+          sortingKey: "000018"
+          contentHash: 58b9c922
+          executionCount: 10
+          executionFinishedAt: 2026-04-10T23:47:24.223Z
+          executionStartedAt: 2026-04-10T23:47:24.222Z
+          type: code
+          content: >-
+            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
+
+            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
+
+            resultado_final['pais'] = (
+                resultado_final['pais']
+                .str.strip()
+                .str.upper()
+                .str.normalize('NFKD')
+                .str.encode('ascii', errors='ignore')
+                .str.decode('utf-8')
+            )
+
+
+            # Mostrar resultados
+
+            resultado_final['pais'].unique()
+          metadata:
+            execution_start: 1775864844222
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 604dbb3a170e4974a489b401c6112b92
+          blockGroup: 81d46677e7714d7199a0e62288b58442
+          sortingKey: "000019"
+          contentHash: 5e172c38
+          executionCount: 12
+          executionFinishedAt: 2026-04-10T23:47:24.333Z
+          executionStartedAt: 2026-04-10T23:47:24.333Z
+          type: code
+          content: >-
+            # Inspección del dataset intermedio
+
+            resultado_final.head(10)
+          metadata:
+            execution_start: 1775864844333
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: b858f320621e402da3bbd21f710a11ac
+          blockGroup: e948c3b6d2be468ba6d56832be16cbb3
+          sortingKey: "000020"
+          type: text-cell-p
+          content: ""
+          metadata:
+            formattedRanges: []
+        - id: 14f239f4df1d40c295960721b15aec72
+          blockGroup: df67e7cba2044cf687aa1de1168012ae
+          sortingKey: "000021"
+          contentHash: e83b824c
+          executionCount: 11
+          executionFinishedAt: 2026-04-10T23:47:24.273Z
+          executionStartedAt: 2026-04-10T23:47:24.273Z
+          type: code
+          content: >-
+            # Revisión de tipos de datos de dataframe final
+
+            resultado_final.dtypes
+          metadata:
+            execution_start: 1775864844273
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 4096e758ab2e40bbb6087510ebce5c78
+          blockGroup: e57f946d61864f2dae3d69aa103c8644
+          sortingKey: "000022"
+          type: text-cell-h2
+          content: '1.2. Dataset 2: "Tiempo total de trabajo"'
+          metadata:
+            formattedRanges: []
+        - id: 6a6d2f50e14b4ea1ac235bba74183c90
+          blockGroup: 53bebc801c5e4bb7a4611208080ed878
+          sortingKey: "000023"
+          contentHash: 203a64ac
+          executionCount: 13
+          executionFinishedAt: 2026-04-10T23:47:24.483Z
+          executionStartedAt: 2026-04-10T23:47:24.393Z
+          type: code
+          content: >-
+            # Cargar el dataset
+
+            tiempo_trabajo = pd.read_csv('/work/Tiempo total de trabajo.csv', encoding='latin-1')
+
+
+            # Mostrar todas las columnas
+
+            columnas = tiempo_trabajo.columns.tolist()
+
+            print(columnas)
+          metadata:
+            execution_start: 1775864844393
+            execution_millis: 90
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: aee15b71576b4f8481f5a8decd0faf82
+          blockGroup: 031cfcefcf3d496a87a9e4db69c95a7a
+          sortingKey: "000024"
+          contentHash: e38c62f6
+          executionCount: 14
+          executionFinishedAt: 2026-04-10T23:47:24.543Z
+          executionStartedAt: 2026-04-10T23:47:24.543Z
+          type: code
+          content: >-
+            # Número total de filas y columnas del dataset
+
+            tiempo_trabajo.shape
+          metadata:
+            execution_start: 1775864844543
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 28dfab7a82ae4786a9fda00d66834055
+          blockGroup: f0a9e35548a245c1b2b20d177c16b2cd
+          sortingKey: "000025"
+          type: text-cell-h2
+          content: 1.2.1 Extracción y exploración del dataset
+          metadata:
+            formattedRanges: []
+        - id: 7c63f172770f4a2c8f1a52cb235cc163
+          blockGroup: cbf1aa37c2fb4c898b6ae2b71144e14e
+          sortingKey: "000026"
+          contentHash: da118f1e
+          executionCount: 15
+          executionFinishedAt: 2026-04-10T23:47:24.603Z
+          executionStartedAt: 2026-04-10T23:47:24.603Z
+          type: code
+          content: >-
+            # Comprobación de los tipos de datos
+
+            tiempo_trabajo.dtypes
+          metadata:
+            execution_start: 1775864844603
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 6939c0e151a24bc5af674f7463d050c9
+          blockGroup: 0e6fbc9c571941c3a0ab48ea9a432ac2
+          sortingKey: "000027"
+          type: text-cell-h2
+          content: 1.2.2 Transformación
+          metadata:
+            formattedRanges: []
+        - id: 9bfa5e44d1444350926fa73effe923ca
+          blockGroup: bdae464ab2ee4d3c84fabd97a3e1fd78
+          sortingKey: "000028"
+          contentHash: 51f1396b
+          executionCount: 16
+          executionFinishedAt: 2026-04-10T23:47:24.763Z
+          executionStartedAt: 2026-04-10T23:47:24.763Z
+          type: code
+          content: >-
+            # Se crea una copia sobre la cual realizar las transformaciones
+
+            tiempo_trabajo_copia = tiempo_trabajo.copy()
+          metadata:
+            execution_start: 1775864844763
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: a14afb05f9d8463d87642027c73db32a
+          blockGroup: 1bbc9cf397de4a47bbe241b1779f163e
+          sortingKey: "000029"
+          contentHash: 465fab24
+          executionCount: 18
+          executionFinishedAt: 2026-04-10T23:47:24.873Z
+          executionStartedAt: 2026-04-10T23:47:24.873Z
+          type: code
+          content: >-
+            # Verificación de valores nulos por columna
+
+            tiempo_trabajo.isnull().sum()
+          metadata:
+            execution_start: 1775864844873
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: e876f4f583e648a3bd0adf8f62717c43
+          blockGroup: 729685590f6e4afaa68ba872c3d7dda8
+          sortingKey: "000030"
+          contentHash: 3120eb55
+          executionCount: 19
+          executionFinishedAt: 2026-04-10T23:47:24.923Z
+          executionStartedAt: 2026-04-10T23:47:24.923Z
+          type: code
+          content: >-
+            # Normalización de nombres de columnas para mejorar la legibilidad
+
+            tiempo_trabajo_copia = tiempo_trabajo_copia.rename(
+                columns=
+                {'indicator': 'indicador',
+                'Años__ESTANDAR': 'anios',
+                'País__ESTANDAR': 'pais',
+                'Tipos de trabajo': 'tipo_trabajo',
+                'value': 'promedio_horas_semanales'
+                }
+            )
+
+
+            # Mostrar el resultado
+
+            tiempo_trabajo_copia.head(5)
+          metadata:
+            execution_start: 1775864844923
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 129f647ff93b4e8cb50042e60bd31636
+          blockGroup: 060e44ce7d0e4cb7bc09ba7dc8ce77be
+          sortingKey: "000031"
+          contentHash: e25fb5ef
+          executionCount: 17
+          executionFinishedAt: 2026-04-10T23:47:24.823Z
+          executionStartedAt: 2026-04-10T23:47:24.823Z
+          type: code
+          content: >-
+            # Eliminación de columnas no significativas para el análisis
+
+            tiempo_trabajo_copia = tiempo_trabajo_copia.drop(
+                columns=['Sexo__población', 'unit', 'notes_ids', 'source_id'],
+                errors ='ignore'
+            )
+
+
+            # Mostrar el resultado
+
+            tiempo_trabajo_copia.head(5)
+          metadata:
+            execution_start: 1775864844823
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 0835d36a54a64ee0be6ce8960a871fb5
+          blockGroup: f955dea9162d4c3dbea83d3186821bd7
+          sortingKey: "000032"
+          contentHash: ca015336
+          executionCount: 20
+          executionFinishedAt: 2026-04-10T23:47:24.983Z
+          executionStartedAt: 2026-04-10T23:47:24.982Z
+          type: code
+          content: >-
+            # Convertimos la columna 'valor' a string, cambiamos coma por punto y convertimos a float
+
+            tiempo_trabajo_copia['promedio_horas_semanales'] = pd.to_numeric(
+                tiempo_trabajo_copia['promedio_horas_semanales'].astype(str).str.replace(',', '.'), 
+                errors='coerce'
+            )
+
+
+            # Mostrar resultados
+
+            display(tiempo_trabajo_copia[['promedio_horas_semanales']].head())
+
+            print(f"Nuevo tipo de dato: {tiempo_trabajo_copia['promedio_horas_semanales'].dtype}")
+          metadata:
+            execution_start: 1775864844982
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: cbc649c5dc1d4dd0a7e49c392773e965
+          blockGroup: deb45aecdfb94dfeb409ab99cead797d
+          sortingKey: "000033"
+          contentHash: d508abc9
+          executionCount: 21
+          executionFinishedAt: 2026-04-10T23:47:25.043Z
+          executionStartedAt: 2026-04-10T23:47:25.043Z
+          type: code
+          content: >-
+            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
+
+            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
+
+            tiempo_trabajo_copia['pais'] = (
+                tiempo_trabajo_copia['pais']
+                .str.strip()
+                .str.upper()
+                .str.normalize('NFKD')
+                .str.encode('ascii', errors='ignore')
+                .str.decode('utf-8')
+            )
+
+
+            # Mostrar resultados
+
+            tiempo_trabajo_copia['pais'].unique()
+          metadata:
+            execution_start: 1775864845043
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 5dcf5ca4783347e59c1df9f9afbc5f2b
+          blockGroup: 1b9cd943d2804ce5a5144b498983d532
+          sortingKey: "000034"
+          contentHash: fc236707
+          executionCount: 22
+          executionFinishedAt: 2026-04-10T23:47:25.093Z
+          executionStartedAt: 2026-04-10T23:47:25.093Z
+          type: code
+          content: >-
+            # Cantidad de tipos de trabajo por país
+
+            tiempo_trabajo_copia.groupby("pais")["tipo_trabajo"].nunique()
+          metadata:
+            execution_start: 1775864845093
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 4b43d190461c46e19e2397da4307730e
+          blockGroup: c4122776602a4f269565dc7c06185535
+          sortingKey: "000035"
+          contentHash: ea9a64ec
+          executionCount: 24
+          executionFinishedAt: 2026-04-10T23:47:25.223Z
+          executionStartedAt: 2026-04-10T23:47:25.223Z
+          type: code
+          content: >-
+            # Transformación a formato ancho: cada tipo de trabajo pasa a ser una columna
+
+            # para obtener una única fila por país
+
+
+            df_tiempo_trabajo = tiempo_trabajo_copia.pivot(
+                index='pais',
+                columns='tipo_trabajo',
+                values='promedio_horas_semanales'
+            ).reset_index()
+
+
+            # Eliminación del nombre del eje de columnas para mayor claridad
+
+            df_tiempo_trabajo.columns.name = None
+
+
+            # Recuperación de columnas constantes por país (indicador y anios)
+
+            df_extra = tiempo_trabajo_copia[['pais', 'indicador', 'anios']].drop_duplicates()
+
+
+            df_tiempo_trabajo = df_tiempo_trabajo.merge(df_extra, on='pais', how='left')
+
+
+            # Limpieza de nombres de columnas
+
+            df_tiempo_trabajo = df_tiempo_trabajo.rename(
+                columns=
+                {'Tiempo total de trabajo': 'tiempo_total_trabajo',
+                'Tiempo trabajo remunerado': 'tiempo_trabajo_remunerado',
+                'Tiempo trabajo no remunerado': 'tiempo_trabajo_no_remunerado'
+                }
+            )
+
+
+            # Aplicamos orden de columnas correcto
+
+            df_tiempo_trabajo = df_tiempo_trabajo[
+                ['indicador', 'anios', 'pais', 'tiempo_total_trabajo', 'tiempo_trabajo_remunerado', 'tiempo_trabajo_no_remunerado']
+            ]
+
+
+            # Verificación del resultado
+
+            df_tiempo_trabajo
+          metadata:
+            execution_start: 1775864845223
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: cd4a4d28f4944f958cdaf5c3160569f4
+          blockGroup: a9b1c59b5bd74b0ea481454a3942bfc8
+          sortingKey: "000036"
+          type: text-cell-h2
+          content: '1.3. Dataset 3: "Estructura de la población por sexo y por grupos de edad (Porcentaje)"'
+          metadata:
+            formattedRanges: []
+        - id: 3eec4836afb64fec9574030ad2d99d64
+          blockGroup: eefab9859d9d4924927baf30aa46cfd0
+          sortingKey: "000037"
+          contentHash: c94dfd8d
+          executionCount: 23
+          executionFinishedAt: 2026-04-10T23:47:25.163Z
+          executionStartedAt: 2026-04-10T23:47:25.163Z
+          type: code
+          content: >-
+            # Inspección del dataset intermedio
+
+            tiempo_trabajo_copia.head(10)
+          metadata:
+            execution_start: 1775864845163
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 10
+              pageIndex: 1
+              columnOrder:
+                - indicador
+                - anios
+                - pais
+                - tipo_trabajo
+                - promedio_horas_semanales
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_loading: false
+        - id: 68ea228f1c6940c3be39442afebfccc7
+          blockGroup: ede4ad36c4cd496dae1bad583aebc03c
+          sortingKey: "000038"
+          type: text-cell-h2
+          content: 1.3.1 Extracción y exploración del dataset
+          metadata:
+            formattedRanges: []
+        - id: 33fcd022de024df1b0ae3ee3cb2477cf
+          blockGroup: 41bbb52dade741568deef7388e33855c
+          sortingKey: "000039"
+          contentHash: b68bead4
+          executionCount: 25
+          executionFinishedAt: 2026-04-10T23:47:25.376Z
+          executionStartedAt: 2026-04-10T23:47:25.283Z
+          type: code
+          content: >-
+            # Cargar el dataset
+
+            poblacion = pd.read_csv('/work/Poblacion por genero y edad.csv', encoding='latin-1')
+
+
+            # Mostrar todas las columnas
+
+            columnas = poblacion.columns.tolist()
+
+            print(columnas)
+          metadata:
+            execution_start: 1775864845283
+            execution_millis: 93
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 6525f71884364cca9b67a11c6a795d31
+          blockGroup: 9fef0e064f3b46fdbf248579829a826f
+          sortingKey: "000040"
+          contentHash: "87689608"
+          executionCount: 26
+          executionFinishedAt: 2026-04-10T23:47:25.423Z
+          executionStartedAt: 2026-04-10T23:47:25.422Z
+          type: code
+          content: >-
+            # Número total de filas y columnas del dataset
+
+            poblacion.shape
+          metadata:
+            execution_start: 1775864845422
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: b1b4eb74a48d4f06aded065beaf2d63e
+          blockGroup: 648300fa8ab149f8ab07630945cdd2af
+          sortingKey: "000041"
+          contentHash: 5f030723
+          executionCount: 27
+          executionFinishedAt: 2026-04-10T23:47:25.473Z
+          executionStartedAt: 2026-04-10T23:47:25.473Z
+          type: code
+          content: >-
+            # Comprobación de los tipos de datos
+
+            poblacion.dtypes
+          metadata:
+            execution_start: 1775864845473
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 3aa9835dba874f45b65c23bbe72bc5ff
+          blockGroup: fbb7e98ee2274ba0b1bc4f51de8c978b
+          sortingKey: "000042"
+          contentHash: e8afedf
+          executionCount: 28
+          executionFinishedAt: 2026-04-10T23:47:25.523Z
+          executionStartedAt: 2026-04-10T23:47:25.523Z
+          type: code
+          content: >-
+            # Verificación de valores nulos por columna
+
+            poblacion.isnull().sum()
+          metadata:
+            execution_start: 1775864845523
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 356c53d393f44c7da8d627169d4c133c
+          blockGroup: 063c72b3b8054c24937309d10bad6deb
+          sortingKey: "000043"
+          type: text-cell-h2
+          content: 1.3.2 Transformación
+          metadata:
+            formattedRanges: []
+        - id: 218288df5b7a4221949925fe6eb3a507
+          blockGroup: b7d11c9f36ce47f7a32bf5d4c1a9cef3
+          sortingKey: "000044"
+          contentHash: e7f85e66
+          executionCount: 29
+          executionFinishedAt: 2026-04-10T23:47:25.583Z
+          executionStartedAt: 2026-04-10T23:47:25.583Z
+          type: code
+          content: >-
+            # Se crea una copia sobre la cual realizar las transformaciones
+
+            poblacion_copia = poblacion.copy()
+          metadata:
+            execution_start: 1775864845583
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 9c81dfa8bcc14de19059a29fbbc168e6
+          blockGroup: aa714e9c21eb4b1cb9895a06a2bbd98c
+          sortingKey: "000045"
+          contentHash: 8e3a3ceb
+          executionCount: 30
+          executionFinishedAt: 2026-04-10T23:47:25.773Z
+          executionStartedAt: 2026-04-10T23:47:25.773Z
+          type: code
+          content: >-
+            # Normalización de nombres de columnas para mejorar la legibilidad
+
+            poblacion_copia = poblacion_copia.rename(
+                columns=
+                {'indicator': 'indicador',
+                'País__ESTANDAR': 'pais',
+                'Grupos quinquenales de edad': 'grupos_edad',
+                'Años__ESTANDAR': 'anios',
+                'value': 'miles_personas_a_mitad_anio'
+                }
+            )
+
+
+            # Mostrar el resultado
+
+            poblacion_copia.head(5)
+          metadata:
+            execution_start: 1775864845773
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: b30f4096aa6442a09acc049205ee90ef
+          blockGroup: 64c5fe97fa984d8a9a36650dfb297073
+          sortingKey: "000046"
+          contentHash: "53099027"
+          executionCount: 31
+          executionFinishedAt: 2026-04-10T23:47:25.833Z
+          executionStartedAt: 2026-04-10T23:47:25.833Z
+          type: code
+          content: >-
+            # Convertimos la columna 'valor' a string, cambiamos coma por punto y convertimos a float
+
+            poblacion_copia['miles_personas_a_mitad_anio'] = pd.to_numeric(
+                poblacion_copia['miles_personas_a_mitad_anio'].astype(str).str.replace(',', '.'), 
+                errors='coerce'
+            )
+
+
+            # Mostrar resultados
+
+            display(poblacion_copia[['miles_personas_a_mitad_anio']].head())
+
+            print(f"Nuevo tipo de dato: {poblacion_copia['miles_personas_a_mitad_anio'].dtype}")
+          metadata:
+            execution_start: 1775864845833
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 088e06fbbbb14bc98ada9fd7e19d6d67
+          blockGroup: 88183eeaa55f4eabbf2c7691036d69bb
+          sortingKey: "000047"
+          contentHash: 3279d519
+          executionCount: 33
+          executionFinishedAt: 2026-04-10T23:47:25.933Z
+          executionStartedAt: 2026-04-10T23:47:25.932Z
+          type: code
+          content: poblacion_copia.anios.unique()
+          metadata:
+            execution_start: 1775864845932
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 91657dab707e4abd93408c0a2ad67493
+          blockGroup: d2535bacbfb241b38863ac93826cf5c7
+          sortingKey: "000048"
+          contentHash: d5ab1a15
+          executionCount: 34
+          executionFinishedAt: 2026-04-10T23:47:25.983Z
+          executionStartedAt: 2026-04-10T23:47:25.983Z
+          type: code
+          content: >-
+            # Creamos la referencia con el año más nuevo de cada país
+
+            referencia_max = poblacion_copia.groupby('pais', as_index=False)['anios'].max()
+
+
+            # Filtramos el dataset por el último año disponible por país
+
+            poblacion_filtrada = poblacion_copia.merge(
+                referencia_max, 
+                on=['pais', 'anios'], 
+                how='inner'
+            )
+
+
+            # Verificamos el resultado
+
+            print(f"Filas originales: {len(poblacion_copia)}")
+
+            print(f"Filas filtradas: {len(poblacion_filtrada)}")
+
+            display(poblacion_filtrada.head(20))
+          metadata:
+            execution_start: 1775864845983
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 4e2d0fc214584635b4bb35ada7495152
+          blockGroup: 34a2001500804ba8ba67fb47325551cc
+          sortingKey: "000049"
+          contentHash: 6b95c163
+          executionCount: 35
+          executionFinishedAt: 2026-04-10T23:47:26.033Z
+          executionStartedAt: 2026-04-10T23:47:26.033Z
+          type: code
+          content: >-
+            # Estandarización de la columna 'pais' para garantizar consistencia en la clave de unión.
+
+            # Se eliminan espacios, se unifica el formato en mayúsculas y se remueven acentos.
+
+            poblacion_filtrada["pais"] = (
+                poblacion_filtrada["pais"]
+                .str.strip()
+                .str.upper()
+                .str.normalize('NFKD')
+                .str.encode('ascii', errors='ignore')
+                .str.decode('utf-8')
+            )
+
+
+            # Mostrar resultados
+
+            poblacion_filtrada['pais'].unique()
+          metadata:
+            execution_start: 1775864846033
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 10
+              pageIndex: 2
+              columnOrder:
+                - pais
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_invalid: false
+            deepnote_table_loading: false
+        - id: 02ef75637b6b4983852ba57e4f643c90
+          blockGroup: b3f2867a45b84698aeb3fe82de7fb6d0
+          sortingKey: "000050"
+          contentHash: 2750c544
+          executionCount: 32
+          executionFinishedAt: 2026-04-10T23:47:25.883Z
+          executionStartedAt: 2026-04-10T23:47:25.882Z
+          type: code
+          content: >-
+            # Eliminación de columnas no significativas para el análisis
+
+            poblacion_copia = poblacion_copia.drop(
+                columns=['Sexo', 'unit', 'notes_ids', 'source_id'],
+                errors ='ignore'
+            )
+
+
+            # Mostrar el resultado
+
+            poblacion_copia.head(5)
+          metadata:
+            execution_start: 1775864845882
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 60751eb9199748658048ed3314a626d1
+          blockGroup: 72c4db558fc7424891347bf177c9b372
+          sortingKey: "000051"
+          contentHash: 65e4b706
+          executionCount: 36
+          executionFinishedAt: 2026-04-10T23:47:26.083Z
+          executionStartedAt: 2026-04-10T23:47:26.083Z
+          type: code
+          content: >-
+            # Cantidad de grupos etarios por país
+
+            poblacion_filtrada.groupby("pais")["grupos_edad"].nunique()
+          metadata:
+            execution_start: 1775864846083
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 05ff4da04c974f23bfd174e962c22d85
+          blockGroup: d7d279412f82489d9d3f69cf41bbb53a
+          sortingKey: "000052"
+          contentHash: d33edc95
+          executionCount: 37
+          executionFinishedAt: 2026-04-10T23:47:26.143Z
+          executionStartedAt: 2026-04-10T23:47:26.143Z
+          type: code
+          content: >-
+            # Inspección del dataset intermedio
+
+            poblacion_filtrada.head(20)
+          metadata:
+            execution_start: 1775864846143
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+            deepnote_table_state:
+              sortBy: []
+              filters: []
+              pageSize: 10
+              pageIndex: 0
+              columnOrder:
+                - indicador
+                - pais
+                - grupos_edad
+                - anios
+                - miles_personas_a_mitad_anio
+              hiddenColumnIds: []
+              columnDisplayNames: []
+              conditionalFilters: []
+              cellFormattingRules: []
+              wrappedTextColumnIds: []
+            deepnote_table_loading: false
+        - id: c669a9bcf95646a5bb38b9a8b28bd42b
+          blockGroup: 5e4a2a983711489991ba536b97b71a53
+          sortingKey: "000053"
+          type: text-cell-h2
+          content: 1.4. Consolidación de dataset de análisis
+          metadata:
+            formattedRanges: []
+        - id: 07d2c83da79c4a0ea9df3d8bfacd4e54
+          blockGroup: 62343155f4694212b7a12e54b9932e1f
+          sortingKey: "000054"
+          contentHash: 6b1a1393
+          executionCount: 40
+          executionFinishedAt: 2026-04-10T23:47:26.983Z
+          executionStartedAt: 2026-04-10T23:47:26.983Z
+          type: code
+          content: df_tiempo_internet.head(10)
+          metadata:
+            execution_start: 1775864846983
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 4f20fef52a9a490aafd3cd554f975f73
+          blockGroup: eafda2b52f45452e9a95ebd4202d9ccf
+          sortingKey: "000055"
+          contentHash: c7f0deaa
+          executionCount: 41
+          executionFinishedAt: 2026-04-10T23:47:27.053Z
+          executionStartedAt: 2026-04-10T23:47:27.053Z
+          type: code
+          content: df_poblacion.head(10)
+          metadata:
+            execution_start: 1775864847053
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 1cf5a59cf9c7494dbef132f5a8dad022
+          blockGroup: cd106a373871433b950f90130bfa5182
+          sortingKey: "000056"
+          contentHash: dc1023ec
+          executionCount: 38
+          executionFinishedAt: 2026-04-10T23:47:26.193Z
+          executionStartedAt: 2026-04-10T23:47:26.193Z
+          type: code
+          content: >-
+            # Detección de países que no coinciden entre fuentes antes del merge
+
+            p1 = set(poblacion_filtrada["pais"])
+
+            p2 = set(df_tiempo_trabajo["pais"])
+
+            p3 = set(resultado_final["pais"])
+
+
+            print("Solo en población:", p1 - p2 - p3)
+
+            print("Solo en tiempo:", p2 - p1 - p3)
+
+            print("Solo en internet:", p3 - p1 - p2)
+          metadata:
+            execution_start: 1775864846193
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: cdfc38494f6f4d7b8b64397a0036eb68
+          blockGroup: ad52e4288efb491b8db74ac08e68d966
+          sortingKey: "000057"
+          contentHash: 90d22fa4
+          executionCount: 42
+          executionFinishedAt: 2026-04-10T23:47:27.103Z
+          executionStartedAt: 2026-04-10T23:47:27.102Z
+          type: code
+          content: df_tiempo_internet.dtypes
+          metadata:
+            execution_start: 1775864847102
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 53c409f457164128b6ef9a4825e80588
+          blockGroup: c47366a1e5bd4f94aae2e34d9c03d17c
+          sortingKey: "000058"
+          contentHash: 327c7893
+          executionCount: 43
+          executionFinishedAt: 2026-04-10T23:47:27.153Z
+          executionStartedAt: 2026-04-10T23:47:27.153Z
+          type: code
+          content: df_poblacion.dtypes
+          metadata:
+            execution_start: 1775864847153
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 7e24c947296e4835804cf321ea4f9bf4
+          blockGroup: 7fdb24fe2c674c7d9c195af00ad7f875
+          sortingKey: "000059"
+          contentHash: a42735ed
+          executionCount: 44
+          executionFinishedAt: 2026-04-10T23:47:27.203Z
+          executionStartedAt: 2026-04-10T23:47:27.203Z
+          type: code
+          content: df_poblacion
+          metadata:
+            execution_start: 1775864847203
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: adb2dbb4743a457eb06366b89256b0d6
+          blockGroup: 79c82e73819d4ab6a09ae8eba6791c39
+          sortingKey: "000060"
+          contentHash: 20ff10ee
+          executionCount: 39
+          executionFinishedAt: 2026-04-10T23:47:26.927Z
+          executionStartedAt: 2026-04-10T23:47:26.243Z
+          type: code
+          content: >-
+            # Copias para el merge final (no se modifican los datasets del ETL)
+
+            df_poblacion = poblacion_filtrada.copy()
+
+            df_tiempo = df_tiempo_trabajo.copy()
+
+            df_internet = resultado_final.copy()
+
+
+            # Eliminación de columnas innecesarias SÓLO para la fase de merge
+
+            df_poblacion = df_poblacion.drop(columns=["indicador"])
+
+            df_tiempo = df_tiempo.drop(columns=["indicador", "anios"])
+
+            df_internet = df_internet.drop(columns=["edad", "anio"])
+
+
+            # ---------------------------------------------------
+
+            # DATASET 1: TIEMPO + INTERNET (nivel país)
+
+            # ---------------------------------------------------
+
+            df_tiempo_internet = df_tiempo.merge(df_internet, on="pais", how="left")
+
+            df_tiempo_internet.to_csv('/work/Trabajo_Remunerado_DATA4CCION/data/df_tiempo_internet.csv', index=False)
+
+
+            # ---------------------------------------------------
+
+            # DATASET 2: POBLACIÓN (nivel país + edad + cantidad de personas)
+
+            # ---------------------------------------------------
+
+            orden_edades = [
+                "0-4", "5-9", "10-14", "15-19", "20-24",
+                "25-29", "30-34", "35-39", "40-44", "45-49",
+                "50-54", "55-59", "60-64", "65-69", "70-74",
+                "75-79", "80-84", "85-89", "90-94", "95-99",
+                "100 y más"
+            ]
+
+
+            df_poblacion["grupos_edad"] = pd.Categorical(
+                df_poblacion["grupos_edad"],
+                categories=orden_edades,
+                ordered=True
+            )
+
+
+            df_poblacion = df_poblacion.sort_values(by=["pais", "grupos_edad"])
+
+            df_poblacion.to_csv('/work/Trabajo_Remunerado_DATA4CCION/data/df_poblacion.csv', index=False)
+          metadata:
+            execution_start: 1775864846243
+            execution_millis: 684
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 1c7144fd1f464717a344f1aac0eba27e
+          blockGroup: 6cf562ed2f1e4210899d80e17de0483d
+          sortingKey: "000061"
+          type: text-cell-h1
+          content: 2. Análisis Exploratorio de Datos (EDA)
+          metadata:
+            formattedRanges: []
+        - id: 7791037314224ca4ac77c42f4fb4a718
+          blockGroup: b0554ef2168143978ad5819a03af89b9
+          sortingKey: "000062"
+          type: text-cell-p
+          content: En esta etapa realizamos un análisis exploratorio del dataset con el objetivo de comprender la estructura de
+            los datos y preparar la información para la construcción del mapa interactivo.
+          metadata:
+            formattedRanges: []
+        - id: 804e8f08769741cb9abbb98f12f503e7
+          blockGroup: 4ed04eca6d4d48cca09fb9eee0abc13e
+          sortingKey: "000063"
+          type: text-cell-p
+          content: "El EDA se enfoca en tres ejes principales:"
+          metadata:
+            formattedRanges: []
+        - id: f8c94d036fa44b7b8fee922b4a46225f
+          blockGroup: f256e3e004be4967a07e9afa328bbb1d
+          sortingKey: "000064"
+          type: text-cell-p
+          content: "A partir de estos ejes, se construyen indicadores que permiten resumir la información:"
+          metadata:
+            formattedRanges: []
+        - id: 66e2ffb25c6546749b10f374fdb5f5c8
+          blockGroup: 4bfa9d57fa6545a6ba35f53676a0887c
+          sortingKey: "000065"
+          type: text-cell-p
+          content: >-
+            - Carga de cuidados  
+
+            - Brecha digital  
+
+            - Vulnerabilidad estructural  
+
+            - Peso poblacional en edad activa  
+
+            - Impacto total  
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 2
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 38
+                fromCodePoint: 24
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 71
+                fromCodePoint: 43
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 105
+                fromCodePoint: 74
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 125
+                fromCodePoint: 110
+        - id: 689c640352e6444b8787807241455590
+          blockGroup: 0909ce21870d449bae849b6a08df47fa
+          sortingKey: "000066"
+          type: text-cell-p
+          content: >-
+            - Distribución poblacional femenina por país en edad activa, para identificar dónde se concentra la
+            población con mayor potencial de participación en el trabajo remunerado.
+
+            - Carga de trabajo (remunerado y no remunerado), con especial énfasis en la proporción de trabajo no
+            remunerado como indicador de carga de cuidados.
+
+            - Brecha digital, analizando el nivel de uso de internet como aproximación al acceso a conectividad.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 59
+                fromCodePoint: 2
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 191
+                fromCodePoint: 175
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 338
+                fromCodePoint: 324
+        - id: e780c13225c2497aa06f7556179f37f7
+          blockGroup: 75408b9799c14f4cabe4dab2dd01aeac
+          sortingKey: "000067"
+          type: text-cell-p
+          content: El objetivo del EDA es identificar patrones entre países y generar los insumos necesarios para el desarrollo
+            del índice y el mapa interactivo final.
+          metadata:
+            formattedRanges: []
+        - id: a079361bb8dc4559bf05842262487357
+          blockGroup: 7ca88651bc4f4bea82892f06be25f99a
+          sortingKey: "000068"
+          type: text-cell-h2
+          content: 2.1. Carga de cuidados
+          metadata:
+            formattedRanges: []
+        - id: b9b54a6142f741d6b7e6d7781f5b7c54
+          blockGroup: 088c0c92a5eb4f01af26e6664fe04ea1
+          sortingKey: "000069"
+          type: text-cell-p
+          content: >-
+            Mide la proporción del tiempo total de trabajo femenino que se destina a trabajo no remunerado (cuidados y
+            tareas domésticas).
+
+
+            Cálculo: tiempo de trabajo no remunerado / tiempo total de trabajo
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 135
+                fromCodePoint: 128
+        - id: 60eace6e272049018ca5177b2f86608f
+          blockGroup: 8c2d330ec0ce49b2ac4232f36c12cea3
+          sortingKey: "000070"
+          contentHash: d8e2f37
+          executionCount: 45
+          executionFinishedAt: 2026-04-10T23:47:27.253Z
+          executionStartedAt: 2026-04-10T23:47:27.253Z
+          type: code
+          content: >-
+            import numpy as np
+
+
+            df_tiempo_internet["carga_cuidados"] = (
+                df_tiempo_internet["tiempo_trabajo_no_remunerado"] /
+                df_tiempo_internet["tiempo_total_trabajo"].replace(0, np.nan)
+            ) * 100
+          metadata:
+            execution_start: 1775864847253
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 54c1d6d493984bcb96bdf5d1cd1ab092
+          blockGroup: 735c9d6d5421468293bef3a8f0f841c0
+          sortingKey: "000071"
+          contentHash: f028bbab
+          executionCount: 47
+          executionFinishedAt: 2026-04-10T23:47:27.373Z
+          executionStartedAt: 2026-04-10T23:47:27.373Z
+          type: code
+          content: >-
+            # Obtenemos un resumen general
+
+            df_tiempo_internet["carga_cuidados"].describe()
+          metadata:
+            execution_start: 1775864847373
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 823f78fe3d9141098fa6ea12f8c040a6
+          blockGroup: 38544aa2c6ab4354bf30ef46e0a16fa6
+          sortingKey: "000072"
+          contentHash: b164320a
+          executionCount: 46
+          executionFinishedAt: 2026-04-10T23:47:27.313Z
+          executionStartedAt: 2026-04-10T23:47:27.313Z
+          type: code
+          content: >-
+            # Revisamos las primeras filas
+
+            df_tiempo_internet[
+                ["pais",
+                "tiempo_total_trabajo", "tiempo_trabajo_no_remunerado",
+                "carga_cuidados"]
+            ].head(10)
+          metadata:
+            execution_start: 1775864847313
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 3a6dece7c56f4edd94feb5c1f4d2270a
+          blockGroup: bb2cc68d637d4310b1c4665fd6ac3ed9
+          sortingKey: "000073"
+          contentHash: ca7918b8
+          executionCount: 48
+          executionFinishedAt: 2026-04-10T23:47:27.433Z
+          executionStartedAt: 2026-04-10T23:47:27.433Z
+          type: code
+          content: >-
+            # Ranking de carga de cuidados por país en mujeres
+
+            df_tiempo_internet[["pais", "carga_cuidados"]].sort_values(
+                by="carga_cuidados",
+                ascending=False
+            )
+          metadata:
+            execution_start: 1775864847433
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 8d55ff831acc4e6f968e9d07797a1a41
+          blockGroup: 2adf0a7010a44e7eadb98ced4d795379
+          sortingKey: "000074"
+          type: text-cell-p
+          content: "Conclusión preliminar: Observamos que Guatemala es el país, dentro de la muestra analizada, donde las mujeres
+            presentan una mayor carga de cuidados, dedicando un 74.42% de su tiempo de trabajo a tareas no remuneradas.
+            Le sigue El Salvador con un 67.49%."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 21
+                fromCodePoint: 0
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 47
+                fromCodePoint: 38
+        - id: ea2f5154667c4c678f0c4aa0741ca3e5
+          blockGroup: 25ec4cdb0c7f48d49edc0007bfc61476
+          sortingKey: "000075"
+          type: text-cell-h2
+          content: 2.2. Brecha digital
+          metadata:
+            formattedRanges: []
+        - id: 103848b6ee124a54a2972810da5e88d4
+          blockGroup: ee574114421045738f4755aa18d1151a
+          sortingKey: "000076"
+          type: text-cell-p
+          content: Mide el nivel de acceso faltante a internet en la población femenina, como aproximación a la brecha de
+            conectividad digital. Los valores más altos indican menor nivel de acceso y mayor brecha digital. Por
+            ejemplo, si el 70% de la población usa internet, la brecha digital es del 30%.
+          metadata:
+            formattedRanges: []
+        - id: 2593a47d6f554d53b0343abe081aefb8
+          blockGroup: e4f41dbb7bd84a7196093bdb7002630b
+          sortingKey: "000077"
+          type: text-cell-p
+          content: "Cálculo: 100 - % uso de internet"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 7
+                fromCodePoint: 0
+        - id: 754549c50a144350a5c2446f7d50ad17
+          blockGroup: 7e6c6854fa9448b089f0836a1a20e0f2
+          sortingKey: "000078"
+          contentHash: e468d977
+          executionCount: 49
+          executionFinishedAt: 2026-04-10T23:47:27.483Z
+          executionStartedAt: 2026-04-10T23:47:27.482Z
+          type: code
+          content: df_tiempo_internet["brecha_digital"] = 100 - df_tiempo_internet["porcentaje_uso_internet"]
+          metadata:
+            execution_start: 1775864847482
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: b19f50208b0940289f045e038c84254c
+          blockGroup: 5a0ace5c54644f8f8a418a4b2f0781aa
+          sortingKey: "000079"
+          contentHash: a9cb97e
+          executionCount: 50
+          executionFinishedAt: 2026-04-10T23:47:27.543Z
+          executionStartedAt: 2026-04-10T23:47:27.543Z
+          type: code
+          content: >-
+            # Revisamos las primeras filas
+
+            df_tiempo_internet[["pais", "porcentaje_uso_internet", "brecha_digital"]].head(10)
+          metadata:
+            execution_start: 1775864847543
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: bb045ec68fcc40cb83e3f2248564b9df
+          blockGroup: 92c2832adb7b496999d29b625e284a03
+          sortingKey: "000080"
+          type: text-cell-p
+          content: "Conclusión preliminar: Se observa una tendencia en la que Guatemala y El Salvador presentan simultáneamente
+            mayor carga de cuidados y menor acceso a internet (51.45% y 47.62%, respectivamente) dentro de la muestra
+            analizada, lo que sugiere posibles contextos de mayor vulnerabilidad relativa."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 21
+                fromCodePoint: 0
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 67
+                fromCodePoint: 58
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 81
+                fromCodePoint: 70
+        - id: 75c791d1ce4d4289ab075d0dca2c3c61
+          blockGroup: ccca92233e08405cbc910b64335aee5d
+          sortingKey: "000081"
+          type: text-cell-h2
+          content: 2.3. Vulnerabilidad estructural
+          metadata:
+            formattedRanges: []
+        - id: b7985b69b7c546e7be8aee56025e89aa
+          blockGroup: 50ece82d7f44401e8f9fb0a28fdf47eb
+          sortingKey: "000082"
+          type: text-cell-p
+          content: >-
+            Mide la combinación de carga de cuidados y brecha digital, como un indicador agregado del nivel de
+            vulnerabilidad estructural. Este es el índice combinado del proyecto, que integra ambas variables en un
+            puntaje de riesgo para identificar los contextos más críticos por país.
+
+
+            Cálculo: (carga de cuidados + brecha digital) / 2
+
+            Es decir, se calcula el valor medio entre ambos problemas. Los valores más altos indican mayor
+            vulnerabilidad estructural, al combinar mayor carga de cuidados y menor acceso digital.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 155
+                fromCodePoint: 138
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 283
+                fromCodePoint: 276
+        - id: 3aff26fc86414b4da27b1f628f7758ee
+          blockGroup: 44eccb873bc946bc9e379edd5ee01b0c
+          sortingKey: "000083"
+          contentHash: a2ecf05a
+          executionCount: 52
+          executionFinishedAt: 2026-04-10T23:47:27.772Z
+          executionStartedAt: 2026-04-10T23:47:27.772Z
+          type: code
+          content: >-
+            df_tiempo_internet["vulnerabilidad"] = (
+                df_tiempo_internet["carga_cuidados"] + df_tiempo_internet["brecha_digital"]
+            ) / 2
+          metadata:
+            execution_start: 1775864847772
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 1dd9f1c33b7a4af18fc107c69a149f6a
+          blockGroup: 775bccd5023944d3a6c9a7fa96338d29
+          sortingKey: "000084"
+          contentHash: 5402c8d5
+          executionCount: 53
+          executionFinishedAt: 2026-04-10T23:47:27.833Z
+          executionStartedAt: 2026-04-10T23:47:27.833Z
+          type: code
+          content: >-
+            # Revisamos las primeras filas
+
+            df_tiempo_internet[["pais", "carga_cuidados", "brecha_digital", "vulnerabilidad"]].head(10)
+          metadata:
+            execution_start: 1775864847833
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 80014fd6467841c3ae440ce481d0496a
+          blockGroup: 20547fe961744058acd4035fa467263a
+          sortingKey: "000085"
+          contentHash: b8be9be3
+          executionCount: 51
+          executionFinishedAt: 2026-04-10T23:47:27.603Z
+          executionStartedAt: 2026-04-10T23:47:27.603Z
+          type: code
+          content: >-
+            # Ranking de uso de internet por país en mujeres
+
+            df_tiempo_internet[["pais", "brecha_digital"]].sort_values(
+                by="brecha_digital",
+                ascending=False
+            )
+          metadata:
+            execution_start: 1775864847603
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: b37b234b0ce5421bb02f43d6595f69b1
+          blockGroup: 98e5be7730df42abb84efdbc9e4019f7
+          sortingKey: "000086"
+          contentHash: 2319beb1
+          executionCount: 54
+          executionFinishedAt: 2026-04-10T23:47:27.893Z
+          executionStartedAt: 2026-04-10T23:47:27.893Z
+          type: code
+          content: >-
+            # Ranking de vulnerabilidad estructural por país
+
+            df_tiempo_internet[["pais", "vulnerabilidad"]].sort_values(
+                by="vulnerabilidad",
+                ascending=False
+            )
+          metadata:
+            execution_start: 1775864847893
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: e2abcc02b43947728fde5074e8db92b5
+          blockGroup: d656002764564dc0b68f2d785d1b1389
+          sortingKey: "000087"
+          type: text-cell-p
+          content: "Conclusión preliminar: Los resultados de este índice combinado refuerzan, a nivel general, las conclusiones
+            preliminares obtenidas en los análisis previos, evidenciando patrones consistentes entre carga de cuidados y
+            brecha digital. En conjunto, este indicador permite sintetizar en una sola medida dos dimensiones
+            estructurales clave del problema, facilitando la comparación entre países y la identificación de tendencias
+            generales dentro de la muestra. Asimismo, resulta clave para identificar contextos prioritarios de
+            intervención, ya que permite reconocer los países con situaciones más críticas en términos de vulnerabilidad
+            estructural."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 21
+                fromCodePoint: 0
+        - id: 822b382aa6a644b6b3a891646f9713ca
+          blockGroup: 6c9d3e2c45664bcf9a2f4d0eaa1c3e17
+          sortingKey: "000088"
+          contentHash: 7d346439
+          executionCount: 55
+          executionFinishedAt: 2026-04-10T23:47:27.953Z
+          executionStartedAt: 2026-04-10T23:47:27.952Z
+          type: code
+          content: df_tiempo_internet
+          metadata:
+            execution_start: 1775864847952
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: a0701a01ee6d4101a1b52355281f76d2
+          blockGroup: 5f794d6045fb4b0f886a832de7825aca
+          sortingKey: "000089"
+          type: text-cell-h2
+          content: 2.4. Peso poblacional (edad activa)
+          metadata:
+            formattedRanges: []
+        - id: 73a4603c616a4445a5fa58ea0ce503b3
+          blockGroup: 2bec436913e24ceb9df79e47c45110a0
+          sortingKey: "000090"
+          type: text-cell-p
+          content: >-
+            Calcula la proporción de mujeres en edad activa en cada país, como aproximación al volumen de población
+            potencialmente expuesta a las condiciones de trabajo y brecha digital. Este indicador se incorpora para
+            dimensionar la magnitud real del problema en cada país, ya que no solo importa la intensidad de la
+            vulnerabilidad estructural, sino también qué porcentaje de mujeres en la edad mencionada se ven afectadas.
+            De este modo, permite contextualizar el impacto potencial de las condiciones analizadas y aportar una mirada
+            de escala poblacional al análisis.
+
+
+            La elección del rango etario 15–64 no implica que el resto de los grupos no sea relevante, sino que responde
+            al recorte analítico del proyecto, el cual se enmarca dentro de la categoría “trabajo remunerado”. En este
+            sentido, se prioriza la denominada “población en edad de trabajar”, definida por la OECD (Organización para
+            la Cooperación y el Desarrollo Económico) como la proporción de personas entre 15 y 64 años respecto del
+            total de la población.
+
+
+            Cálculo: (suma de miles de personas en los grupos de edad 15–64) / total de mujeres del país
+
+
+            Los valores más altos indican una mayor proporción de mujeres en edad activa dentro del país.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 544
+                fromCodePoint: 525
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 593
+                fromCodePoint: 575
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 1019
+                fromCodePoint: 1012
+        - id: f1249e45284c44e0ab516852ca29149e
+          blockGroup: c9c9475ff3804bd2bfefaa5cce70d79e
+          sortingKey: "000091"
+          contentHash: f42f48d6
+          executionCount: 56
+          executionFinishedAt: 2026-04-10T23:47:28.002Z
+          executionStartedAt: 2026-04-10T23:47:28.002Z
+          type: code
+          content: >-
+            # Filtramos el dataset y sólo dejamos las filas correspondientes al grupo etario de 15-64 años
+
+            df_activa = df_poblacion[df_poblacion["grupos_edad"].isin([
+                "15-19","20-24","25-29","30-34","35-39",
+                "40-44","45-49","50-54","55-59","60-64"
+            ])]
+
+
+            # Cálculo de población total por país (todas las edades)
+
+            pob_total = df_poblacion.groupby("pais")["miles_personas_a_mitad_anio"].sum()
+
+
+            # Cálculo de población en edad activa por país
+
+            pob_activa = df_activa.groupby("pais")["miles_personas_a_mitad_anio"].sum()
+
+
+            # Cálculo del peso poblacional de la edad activa
+
+            peso_poblacional_edad_activa = (pob_activa / pob_total) * 100
+          metadata:
+            execution_start: 1775864848002
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 5e06461b0e18482e8a4a6d5cc7cf6a53
+          blockGroup: e23c06716f064df9b0973ee5fd4de5b0
+          sortingKey: "000092"
+          contentHash: ffe0bb1
+          executionCount: 57
+          executionFinishedAt: 2026-04-10T23:47:28.052Z
+          executionStartedAt: 2026-04-10T23:47:28.052Z
+          type: code
+          content: >-
+            # Ranking de países de mayor a menor proporción de mujeres en edad activa
+
+            peso_poblacional_edad_activa.sort_values(ascending=False)
+          metadata:
+            execution_start: 1775864848052
+            execution_millis: 0
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 568dce169dec4fdeaffe986c89283cd5
+          blockGroup: 2ec9ecf5a04340d7b0518f466d106aea
+          sortingKey: "000093"
+          type: text-cell-h2
+          content: 2.5. Riesgo poblacional
+          metadata:
+            formattedRanges: []
+        - id: 48bccf659d9744868c89e63193783791
+          blockGroup: 038cf6b2abf94634b7a592452b18fc47
+          sortingKey: "000094"
+          type: text-cell-p
+          content: >-
+            El riesgo poblacional permite identificar qué países concentran mayor nivel de criticidad dentro del
+            análisis, combinando la vulnerabilidad estructural con el peso de la población en edad activa. De esta
+            manera, no solo se considera la intensidad de las condiciones de desigualdad en términos de carga de
+            cuidados y brecha digital, sino también cuántas mujeres están potencialmente expuestas a estas condiciones
+            en cada país.
+
+
+            Cálculo: vulnerabilidad estructural * proporción de población en edad activa
+
+
+            Esto permite obtener una medida integrada del impacto potencial del problema en cada contexto nacional. En
+            este sentido, valores más altos indican países donde la combinación entre condiciones estructurales adversas
+            y mayor exposición poblacional en edad activa genera escenarios más críticos, lo que resulta clave para la
+            identificación de prioridades de intervención.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 151
+                fromCodePoint: 125
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 194
+                fromCodePoint: 159
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 434
+                fromCodePoint: 427
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 797
+                fromCodePoint: 774
+        - id: 2f5d253655bc4ed082fd19ec2239f4d8
+          blockGroup: 9fa12f7f44c0437f9b9ebe0e49e877cc
+          sortingKey: "000095"
+          type: text-cell-p
+          content: >-
+            Conclusión preliminar: Se observa una distribución relativamente homogénea de la población femenina en edad
+            activa entre los países analizados, con variaciones acotadas entre el 63% y el 68%, lo que sugiere que las
+            diferencias en el impacto del índice estarán principalmente determinadas por el grado de vulnerabilidad
+            estructural y no por la composición demográfica.
+
+            No obstante, se trata en todos los casos de más de la mitad de la población femenina, lo que refuerza la
+            relevancia de considerar este aspecto en el análisis de la problemática.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 21
+                fromCodePoint: 0
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 74
+                fromCodePoint: 38
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 181
+                fromCodePoint: 178
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 190
+                fromCodePoint: 187
+        - id: e588372731bd4eea9332818015fc232f
+          blockGroup: dfeb05b77a464789a7e7f7ef0c6c5768
+          sortingKey: "000096"
+          contentHash: 3c7aa395
+          executionCount: 58
+          executionFinishedAt: 2026-04-10T23:47:28.103Z
+          executionStartedAt: 2026-04-10T23:47:28.102Z
+          type: code
+          content: >-
+            # ---------------------------------------------------
+
+            # DATASET DE RIESGO POBLACIONAL (NIVEL PAÍS)
+
+            # ---------------------------------------------------
+
+
+            # Partimos del dataset de indicadores a nivel país
+
+            df_riesgo = df_tiempo_internet[["pais", "vulnerabilidad"]].copy()
+
+
+            # Agregamos el peso poblacional de la edad activa
+
+            # (proporción de mujeres en edad 15-64 dentro del total)
+
+            df_riesgo = df_riesgo.merge(
+                peso_poblacional_edad_activa.rename("peso_poblacional_edad_activa"),
+                on="pais",
+                how="left"
+            )
+
+
+            # Cálculo del riesgo poblacional:
+
+            # combinación de vulnerabilidad estructural y peso poblacional
+
+            df_riesgo["riesgo_poblacional"] = (
+                df_riesgo["vulnerabilidad"] * df_riesgo["peso_poblacional_edad_activa"]
+            ) / 100
+          metadata:
+            execution_start: 1775864848102
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 54162997f82441b1a1b7bd0ea9d98e5a
+          blockGroup: 25e35759920a485c959e79f309607d29
+          sortingKey: "000097"
+          contentHash: 11c457cc
+          executionCount: 59
+          executionFinishedAt: 2026-04-10T23:47:28.163Z
+          executionStartedAt: 2026-04-10T23:47:28.162Z
+          type: code
+          content: >-
+            # Ranking de riesgo poblacional
+
+
+            df_riesgo = df_riesgo.sort_values(
+                by="riesgo_poblacional",
+                ascending=False
+            )
+
+
+            df_riesgo
+          metadata:
+            execution_start: 1775864848162
+            execution_millis: 1
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+        - id: 9e1ca1f886414afeb9a5df3f7dd073f6
+          blockGroup: 6e30a2d82aa34e6f9115a0577aac3103
+          sortingKey: "000098"
+          type: text-cell-p
+          content: "Conclusión preliminar: Se observa que Guatemala lidera el ranking de riesgo poblacional, seguido por El
+            Salvador. Esto indica que, dentro de la muestra analizada, estos países no solo presentan mayores niveles de
+            vulnerabilidad estructural, sino que además dicha situación se ve amplificada por el peso relativo de su
+            población en edad activa. En conjunto, estos resultados refuerzan la identificación de estos países como los
+            contextos más críticos dentro del análisis, al concentrar simultáneamente mayor intensidad de desigualdades
+            y mayor exposición poblacional."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 21
+                fromCodePoint: 0
+        - id: 7dc5bac28e8746828964fad0fce40d12
+          blockGroup: 1a70f3fea59646e7be56c09744ed1331
+          sortingKey: "000099"
+          contentHash: 2eac9b43
+          executionCount: 60
+          executionFinishedAt: 2026-04-10T23:47:28.433Z
+          executionStartedAt: 2026-04-10T23:47:28.222Z
+          type: code
+          content: >-
+            df_riesgo.to_csv('/work/Trabajo_Remunerado_DATA4CCION/data/df_riesgo.csv', index=False)
+
+            df_riesgo
+          metadata:
+            execution_start: 1775864848222
+            execution_millis: 211
+            execution_context_id: 92f48a46-2b60-4dd0-9ce9-c0ec91cb27cf
+      executionMode: block
+      id: 7f0dbf49f4664fc6a12a709ff68c766b
+      isModule: false
+      name: ETL_EDA
 version: 1.0.0

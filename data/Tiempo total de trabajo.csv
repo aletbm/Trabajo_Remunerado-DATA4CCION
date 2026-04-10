@@ -1,0 +1,28 @@
+indicator,Años__ESTANDAR,País__ESTANDAR,Tipos de trabajo,Sexo__población,value,unit,notes_ids,source_id
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Argentina,Tiempo total de trabajo,Mujeres,"52,5",Promedio de horas semanales,"14606,14607,14608,14609",8068
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Argentina,Tiempo trabajo remunerado,Mujeres,"19,3",Promedio de horas semanales,"14606,14607,14608,14609",8068
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Argentina,Tiempo trabajo no remunerado,Mujeres,"33,2",Promedio de horas semanales,"14606,14607,14608,14609",8068
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Colombia,Tiempo total de trabajo,Mujeres,"51,0",Promedio de horas semanales,"8024,8037",1327
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Colombia,Tiempo trabajo remunerado,Mujeres,"16,9",Promedio de horas semanales,"8024,8037",1327
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,Colombia,Tiempo trabajo no remunerado,Mujeres,"34,1",Promedio de horas semanales,"8024,8037",1327
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,República Dominicana,Tiempo total de trabajo,Mujeres,"48,1",Promedio de horas semanales,"6913,6915,6916,7995,7996,8009,8628,14060,14061,14062,14063",8069
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,República Dominicana,Tiempo trabajo remunerado,Mujeres,"22,6",Promedio de horas semanales,"6913,6915,6916,7995,7996,8009,8628,14060,14061,14062,14063",8069
+Tiempo total de trabajo según tipo de trabajo y sexo,2021,República Dominicana,Tiempo trabajo no remunerado,Mujeres,"25,5",Promedio de horas semanales,"6913,6915,6916,7995,7996,8009,8628,14060,14061,14062,14063",8069
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Costa Rica,Tiempo total de trabajo,Mujeres,"53,8",Promedio de horas semanales,15053,1929
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Costa Rica,Tiempo trabajo remunerado,Mujeres,"18,6",Promedio de horas semanales,15053,1929
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Costa Rica,Tiempo trabajo no remunerado,Mujeres,"35,2",Promedio de horas semanales,15053,1929
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Guatemala,Tiempo total de trabajo,Mujeres,"56,3",Promedio de horas semanales,"7996,8022",1329
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Guatemala,Tiempo trabajo remunerado,Mujeres,"14,4",Promedio de horas semanales,"7996,8022",1329
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Guatemala,Tiempo trabajo no remunerado,Mujeres,"41,9",Promedio de horas semanales,"7996,8022",1329
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Uruguay,Tiempo total de trabajo,Mujeres,"54,5",Promedio de horas semanales,15052,8949
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Uruguay,Tiempo trabajo remunerado,Mujeres,"20,9",Promedio de horas semanales,15052,8949
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,Uruguay,Tiempo trabajo no remunerado,Mujeres,"33,6",Promedio de horas semanales,15052,8949
+Tiempo total de trabajo según tipo de trabajo y sexo,2023,Chile,Tiempo total de trabajo,Mujeres,"54,0",Promedio de horas semanales,"7986,7995",1632
+Tiempo total de trabajo según tipo de trabajo y sexo,2023,Chile,Tiempo trabajo remunerado,Mujeres,"18,4",Promedio de horas semanales,"7986,7995",1632
+Tiempo total de trabajo según tipo de trabajo y sexo,2023,Chile,Tiempo trabajo no remunerado,Mujeres,"35,6",Promedio de horas semanales,"7986,7995",1632
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,El Salvador,Tiempo total de trabajo,Mujeres,"64,6",Promedio de horas semanales,,1925
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,El Salvador,Tiempo trabajo remunerado,Mujeres,"20,9",Promedio de horas semanales,,1925
+Tiempo total de trabajo según tipo de trabajo y sexo,2022,El Salvador,Tiempo trabajo no remunerado,Mujeres,"43,6",Promedio de horas semanales,,1925
+Tiempo total de trabajo según tipo de trabajo y sexo,2024,Perú,Tiempo total de trabajo,Mujeres,"60,9",Promedio de horas semanales,,1331
+Tiempo total de trabajo según tipo de trabajo y sexo,2024,Perú,Tiempo trabajo remunerado,Mujeres,"22,5",Promedio de horas semanales,,1331
+Tiempo total de trabajo según tipo de trabajo y sexo,2024,Perú,Tiempo trabajo no remunerado,Mujeres,"38,4",Promedio de horas semanales,,1331
