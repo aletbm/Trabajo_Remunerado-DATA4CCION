@@ -12,8 +12,6 @@ Requiere: requests (pip install requests)
 import json
 import os
 
-# ── Todos los países de LATAM con sus códigos ISO A3 ──────────────────────────
-# América Central + México
 CENTRAL = {
     "MEX": "México",
     "GTM": "Guatemala",
@@ -25,7 +23,6 @@ CENTRAL = {
     "PAN": "Panamá",
 }
 
-# El Caribe (países independientes)
 CARIBE = {
     "CUB": "Cuba",
     "JAM": "Jamaica",
@@ -45,7 +42,6 @@ CARIBE = {
     "SUR": "Surinam",
 }
 
-# América del Sur
 SUR = {
     "COL": "Colombia",
     "VEN": "Venezuela",
@@ -62,8 +58,6 @@ SUR = {
 LATAM_ISO = {**CENTRAL, **CARIBE, **SUR}
 print(f"Buscando {len(LATAM_ISO)} países...")
 
-# ── Cargar el GeoJSON de Natural Earth ────────────────────────────────────────
-# Intentar primero descarga online; si falla, buscar archivo local
 geojson_source = None
 
 try:
@@ -80,7 +74,6 @@ try:
 except Exception as e:
     print(f"Sin conexión o error: {e}")
     print("Buscando archivo local ne_10m_admin_0_countries.geojson ...")
-    # Buscar en carpetas comunes
     path = os.path.dirname(__file__) + "data/ne_10m_admin_0_countries.geojson"
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
@@ -94,7 +87,6 @@ except Exception as e:
             "carpeta data/ como 'ne_10m_admin_0_countries.geojson'"
         )
 
-# ── Función para resolver el ISO de cada feature ──────────────────────────────
 def resolve_iso(props: dict) -> str | None:
     """
     Natural Earth a veces pone -99 en ISO_A3 para ciertos territorios.
@@ -106,7 +98,6 @@ def resolve_iso(props: dict) -> str | None:
             return val
     return None
 
-# ── Filtrar y normalizar ───────────────────────────────────────────────────────
 found = {}
 unmatched_features = []
 
@@ -115,19 +106,16 @@ for feat in world["features"]:
     iso   = resolve_iso(props)
 
     if iso in LATAM_ISO and iso not in found:
-        # Normalizar properties: dejamos solo lo que necesitamos
         feat["properties"] = {
             "iso":  iso,
             "name": LATAM_ISO[iso],
-            # Útiles para debug / futuros usos
             "name_ne":   props.get("NAME", ""),
             "subregion": props.get("SUBREGION", ""),
             "pop_est":   props.get("POP_EST", None),
         }
         found[iso] = feat
 
-# ── Reporte ───────────────────────────────────────────────────────────────────
-print(f"\n✓ Encontrados: {len(found)}/{len(LATAM_ISO)} países")
+print(f"\nEncontrados: {len(found)}/{len(LATAM_ISO)} países")
 
 missing = set(LATAM_ISO.keys()) - set(found.keys())
 if missing:
@@ -137,7 +125,6 @@ if missing:
     print()
     print("  → Estos pueden ser territorios muy pequeños o islas no incluidas")
 
-# ── Escribir GeoJSON final ────────────────────────────────────────────────────
 latam_geojson = {
     "type": "FeatureCollection",
     "features": list(found.values()),
@@ -150,7 +137,7 @@ with open(out_path, "w", encoding="utf-8") as f:
     json.dump(latam_geojson, f, ensure_ascii=False, indent=2)
 
 size_kb = os.path.getsize(out_path) / 1024
-print(f"\n✓ Guardado en: {out_path}  ({size_kb:.0f} KB)")
+print(f"\nGuardado en: {out_path}  ({size_kb:.0f} KB)")
 print(f"  Países incluidos:")
 for iso, feat in sorted(found.items()):
     print(f"    {iso}  {feat['properties']['name']}")

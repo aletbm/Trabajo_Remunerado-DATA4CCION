@@ -7,8 +7,8 @@ def render_header() -> None:
     col_t, col_tag = st.columns([3, 1])
 
     with col_t:
-        logo_path = os.path.join(os.path.dirname(__file__), "..", "assets", "images", "onumujereslogo.png")
-        st.image(logo_path, width=100)
+        logo_path = os.path.join(os.path.dirname(__file__), "..", "assets", "images", "dat4ccion_logos.png")
+        st.image(logo_path, width=500)
         st.markdown(
             '<p class="hero-sub">◈ Observatorio de Género LATAM</p>',
             unsafe_allow_html=True,
@@ -20,9 +20,9 @@ def render_header() -> None:
         st.markdown(
             '<p class="hero-desc">'
             "Visualización de indicadores de inequidad digital y de cuidados "
-            "en el empleo remunerado para 34 países de América Latina y el Caribe. "
+            "en el empleo remunerado para 9 países de América Latina y el Caribe. "
             "<br><br>"
-            "Datos: CEPAL · OIT · ITU · BID · 2018–2023"
+            "Datos: CEPAL · WB · 2025"
             "</p>",
             unsafe_allow_html=True,
         )
@@ -32,8 +32,8 @@ def render_header() -> None:
         st.markdown(
             """
             <div style="text-align:right">
-              <span class="info-tag">20 países</span>&nbsp;
-              <span class="info-tag">7 métricas</span><br><br>
+              <span class="info-tag">9 países</span>&nbsp;
+              <span class="info-tag">5 métricas</span><br><br>
               <span class="info-tag" style="color:#d94a7a;border-color:#6e1a3a">
                 brecha activa
               </span>
@@ -45,10 +45,10 @@ def render_header() -> None:
 
 
 def render_kpis(df: pd.DataFrame) -> None:
-    avg_gap      = (df["part_masc"] - df["part_fem"]).mean()
-    avg_salary   = df["brecha_salarial"].mean()
-    avg_internet = df["ratio_internet"].mean()
-    avg_tic      = df["mujeres_tic"].mean()
+    avg_cuidados   = df["carga_cuidados"].mean()
+    avg_digital    = df["brecha_digital"].mean()
+    avg_vuln       = df["vulnerabilidad_estructural"].mean()
+    avg_riesgo     = df["riesgo_poblacional"].mean()
 
     k1, k2, k3, k4 = st.columns(4)
 
@@ -56,11 +56,11 @@ def render_kpis(df: pd.DataFrame) -> None:
         st.markdown(
             f"""
             <div class="metric-card">
-              <div class="metric-label">Brecha Promedio Participación</div>
-              <div class="metric-value">{avg_gap:.1f}
-                <span style="font-size:1rem;color:#4a72a0"> pp</span>
+              <div class="metric-label">Carga de Cuidados (prom.)</div>
+              <div class="metric-value">{avg_cuidados:.1f}
+                <span style="font-size:1rem;color:#4a72a0"> %</span>
               </div>
-              <div class="metric-delta neg">▲ hombres vs mujeres</div>
+              <div class="metric-delta neg">▲ tiempo no remunerado</div>
             </div>""",
             unsafe_allow_html=True,
         )
@@ -69,11 +69,11 @@ def render_kpis(df: pd.DataFrame) -> None:
         st.markdown(
             f"""
             <div class="metric-card accent">
-              <div class="metric-label">Brecha Salarial Promedio</div>
-              <div class="metric-value">{avg_salary:.1f}
+              <div class="metric-label">Brecha Digital (prom.)</div>
+              <div class="metric-value">{avg_digital:.1f}
                 <span style="font-size:1rem;color:#4a72a0"> %</span>
               </div>
-              <div class="metric-delta neg">▲ hombres ganan más</div>
+              <div class="metric-delta neg">▲ sin acceso a internet</div>
             </div>""",
             unsafe_allow_html=True,
         )
@@ -81,12 +81,12 @@ def render_kpis(df: pd.DataFrame) -> None:
     with k3:
         st.markdown(
             f"""
-            <div class="metric-card">
-              <div class="metric-label">Ratio Internet M/H (prom.)</div>
-              <div class="metric-value">{avg_internet:.2f}
-                <span style="font-size:1rem;color:#4a72a0"> ratio</span>
+            <div class="metric-card accent">
+              <div class="metric-label">Vulnerabilidad Estructural (prom.)</div>
+              <div class="metric-value">{avg_vuln:.1f}
+                <span style="font-size:1rem;color:#4a72a0"> %</span>
               </div>
-              <div class="metric-delta">objetivo: 1.00</div>
+              <div class="metric-delta neg">▲ índice combinado</div>
             </div>""",
             unsafe_allow_html=True,
         )
@@ -94,12 +94,12 @@ def render_kpis(df: pd.DataFrame) -> None:
     with k4:
         st.markdown(
             f"""
-            <div class="metric-card green">
-              <div class="metric-label">Mujeres en TIC (prom.)</div>
-              <div class="metric-value">{avg_tic:.1f}
+            <div class="metric-card">
+              <div class="metric-label">Riesgo Poblacional (prom.)</div>
+              <div class="metric-value">{avg_riesgo:.1f}
                 <span style="font-size:1rem;color:#4a72a0"> %</span>
               </div>
-              <div class="metric-delta neg">▼ muy por debajo de paridad</div>
+              <div class="metric-delta neg">▼ vulnerabilidad ponderada</div>
             </div>""",
             unsafe_allow_html=True,
         )
