@@ -205,3 +205,16 @@ La app estará disponible en `http://localhost:8501`.
 ## Impacto potencial
 
 Cerrar la brecha digital de género beneficiaría a cerca de **350 millones de mujeres y niñas** a nivel global e impulsaría la economía mundial con una inyección de **1,5 billones de dólares hacia 2030** (ONU Mujeres, 2025).
+
+## Equipo
+
+<div align="center">
+
+| Nombre | Contacto |
+|---|---|
+| **María Agustina Cuello** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maria-agustina-cuello/) |
+| **Camila Bozzoletti** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/camilabozzoletti/) |
+| **Alexander Daniel Rios** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-daniel-rios/) |
+| **Federico Cruceño** |    |
+
+</div>
