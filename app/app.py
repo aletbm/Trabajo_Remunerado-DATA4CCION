@@ -14,8 +14,8 @@ from components.charts import render_charts_section
 from components.footer import render_footer
 
 st.set_page_config(
-    page_title="Brecha Digital · Género · LATAM",
-    page_icon="◈",
+    page_title="Brecha Digital · Carga de Cuidados · Género · LATAM",
+    page_icon="♀️",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
