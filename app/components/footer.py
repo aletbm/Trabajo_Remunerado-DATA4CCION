@@ -32,3 +32,5 @@ def render_footer() -> None:
           st.link_button("🔗 María Agustina Cuello", "https://www.linkedin.com/in/maria-agustina-cuello/", use_container_width=True)
           st.link_button("🔗 Camila Bozzoletti", "https://www.linkedin.com/in/camilabozzoletti/", use_container_width=True)
           st.link_button("🔗 Alexander Daniel Rios", "https://www.linkedin.com/in/alexander-daniel-rios/", use_container_width=True)
+          st.link_button("🔗 Federico Cruceño", "https://www.linkedin.com/in/federico-cruce%C3%B1o/", use_container_width=True)
+          

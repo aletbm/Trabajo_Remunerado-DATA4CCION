@@ -215,6 +215,6 @@ Cerrar la brecha digital de género beneficiaría a cerca de **350 millones de m
 | **María Agustina Cuello** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maria-agustina-cuello/) |
 | **Camila Bozzoletti** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/camilabozzoletti/) |
 | **Alexander Daniel Rios** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-daniel-rios/) |
-| **Federico Cruceño** |    |
+| **Federico Cruceño** |  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/federico-cruce%C3%B1o/)  |
 
 </div>
