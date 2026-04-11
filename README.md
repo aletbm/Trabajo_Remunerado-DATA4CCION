@@ -39,7 +39,7 @@ Estas barreras estructurales no pueden abordarse de forma aislada: la brecha dig
 
 ## Propuesta
 
-Mapa interactivo con índice de riesgo combinado por país que integra:
+Mapa interactivo con índice de riesgo combinado por país para [DAT4CCIÓN 2026](https://lac.unwomen.org/es/dat4ccion) que integra:
 
 - **Brecha digital de género** — acceso y uso de internet por sexo
 - **Carga de cuidados** — tiempo dedicado al trabajo no remunerado por sexo
