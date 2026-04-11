@@ -20,7 +20,8 @@ def render_header() -> None:
         st.markdown(
             '<p class="hero-desc">'
             "Visualización de indicadores de inequidad digital y de cuidados "
-            "en el empleo remunerado para 9 países de América Latina y el Caribe. "
+            "que condicionan el acceso al empleo remunerado para mujeres en "
+            "9 países de América Latina y el Caribe. "
             "<br><br>"
             "Datos: CEPAL · WB · 2025"
             "</p>",
